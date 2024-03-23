@@ -1,0 +1,15 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+XDG_CONFIG_HOME=/home/asbel/.xdg/config
+XDG_CACHE_HOME=/home/asbel/.xdg/cache
+XDG_DATA_HOME=/home/asbel/.xdg/local/share
+XDG_STATE_HOME=/home/asbel/.xdg/local/state
+
+EDITOR="vim -u /home/asbel/.xdg/config/dotfiles/.vimrc"
+GNUPGHOME=/home/asbel/.xdg/config/.gnupg
+ZDOTDIR=/home/asbel/.xdg/config/dotfiles/zsh
+VDPAU_DRIVER=radeonsi
+CARGO_HOME=/home/asbel/.xdg/local/share/cargo
+RUSTUP_HOME=/home/asbel/.xdg/local/share/rustup

@@ -1,0 +1,6 @@
+dotfiles=/home/asbel/.xdg/config/dotfiles/
+ln -s $dotfiles/environment /etc/
+ln -s $dotfiles/vconsole.conf /etc/
+ln -s $dotfiles/bash.bashrc /etc/
+echo "source $dotfiles/.bashrc" >> /etc/bash.bashrc
+

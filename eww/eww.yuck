@@ -1,0 +1,7 @@
+(include "/home/asbel/.xdg/config/eww/src/yuck/_variables.yuck")
+(include "/home/asbel/.xdg/config/eww/src/yuck/bar/_definitions.yuck")
+(include "/home/asbel/.xdg/config/eww/src/yuck/bar/_widgets.yuck")
+(include "/home/asbel/.xdg/config/eww/src/yuck/lock/_definitions.yuck")
+(include "/home/asbel/.xdg/config/eww/src/yuck/lock/_widgets.yuck")
+(include "/home/asbel/.xdg/config/eww/src/yuck/widgets/_definitions.yuck")
+(include "/home/asbel/.xdg/config/eww/src/yuck/widgets/_widgets.yuck")

@@ -1,0 +1,59 @@
+*{
+    font-family: JetBrainsMono;
+    font-size: 13px;
+    min-height: 0;
+    border: 0px;
+    margin-left: 2px;
+    margin-right:2px;
+}
+
+window#waybar {
+    background-color: white;
+    border-radius: 20px;
+    color: #4a4f46;
+}
+
+#workspaces{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#workspaces button{
+    color:white;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: #4e3e80;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-top: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#workspaces button.active, #workspaces button.focused{
+    color: white;
+    background: #4b56ad;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#tray,
+#cpu,
+#temperature,
+#memory
+#sway-mode,
+#backlight,
+#pulseaudio,
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#battery,
+#clock,
+#network {
+    padding: 0 0 0 0;
+}
+

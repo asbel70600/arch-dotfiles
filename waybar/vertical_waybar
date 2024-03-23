@@ -1,0 +1,5 @@
+#!/bin/bash
+
+kiallall waybar
+waybar -c /home/asbel/.xdg/config/waybar/config_vertical -s /home/asbel/.xdg/config/waybar/style_vertical.css &> /dev/null &
+
