@@ -1,3 +1,6 @@
+local lspkind = require("lspkind")
+local cmp = require("cmp")
+
 return {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -9,8 +12,6 @@ return {
     },
     opts = {},
     config = function()
-        local cmp = require("cmp")
-        local lspkind = require("lspkind")
         cmp.setup({
             formatting = {
                 format = lspkind.cmp_format({
@@ -36,10 +37,9 @@ return {
                 ["<C-e>"] = cmp.mapping.abort(),
                 ["<Tab>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
             }),
-
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
-                { name = "luasnip" }, -- For luasnip users.
+                { name = "luasnip" },
             }, {
                 { name = "buffer" },
             }),

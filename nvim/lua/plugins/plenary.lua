@@ -1,3 +1,5 @@
 return {
-'nvim-lua/plenary.nvim'
+    'nvim-lua/plenary.nvim',
+    --    No opts 'cause it fails
+--    opts = {},
 }

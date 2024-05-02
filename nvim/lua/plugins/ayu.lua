@@ -1,3 +1,5 @@
 return {
-    "Shatur/neovim-ayu"
+    "Shatur/neovim-ayu",
+-- No opts 'cause it fails
+--    opts = {},
 }

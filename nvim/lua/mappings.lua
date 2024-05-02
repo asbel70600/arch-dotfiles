@@ -4,7 +4,7 @@ local opts = {
 	noremap = true, -- non-recursive
 	silent = true, -- do not show message
 }
-
+vim.keymap.set("n", "<C-.>", ":bn<cr>",opts)
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
 vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
@@ -24,15 +24,15 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Hint: start visual mode with the same area as the previous area and the same mode
 -- vim.keymap.set('v', '<', '<gv', opts)
 -- vim.keymap.set('v', '>', '>gv', opts)
-vim.keymap.set("n", "<C-A>", "<cmd>NvimTreeToggle<cr>", {})
-vim.keymap.set("n", "<C-TAB>", "<cmd>bn<cr>", {})
+vim.keymap.set("n", "<C-A>", "<cmd>NvimTreeToggle<cr>", opts)
+vim.keymap.set("n", "<C-TAB>", "<cmd>bn<cr>", opts)
 vim.keymap.set("t", "<C-O>", "<C-\\><C-N>")
 vim.keymap.set("t", "<C-TAB>", "<C-\\><C-N><cmd>bn<cr>")
-vim.keymap.set("n", "<C-i>n", "<cmd>bn<cr>", {})
-vim.keymap.set("n", "<C-i>p", "<cmd>bp<cr>", {})
-vim.keymap.set("n", "<C-i>d", "<cmd>bd<cr>", {})
-vim.keymap.set("n", "<F3>", "<cmd>lua require('conform').format({bufnr = vim.fn.bufnr('%')})<cr>", {})
-vim.keymap.set("n", "<Leader>u", "", {})
+vim.keymap.set("n", "<C-i>n", "<cmd>bn<cr>", opts)
+vim.keymap.set("n", "<C-i>p", "<cmd>bp<cr>", opts)
+vim.keymap.set("n", "<C-i>d", "<cmd>bd<cr>", opts)
+vim.keymap.set("n", "<F3>", "<cmd>lua require('conform').format({bufnr = vim.fn.bufnr('%')})<cr>", opts)
+vim.keymap.set("n", "<Leader>u", "", opts)
 vim.keymap.set(
 	"n",
 	"gx",
@@ -68,13 +68,12 @@ end
 
 MY_KEYMAPS.OnTelescopeReady = function()
 	local builtin = require("telescope.builtin")
-
-	vim.keymap.set("n", "<Leader>ff", builtin.find_files, {})
-	vim.keymap.set("n", "<Leader>fg", builtin.live_grep, {})
-	vim.keymap.set("n", "<Leader>fb", builtin.buffers, {})
-	vim.keymap.set("n", "<Leader>fh", builtin.help_tags, {})
-	vim.keymap.set("n", "<Leader>fo", builtin.oldfiles, {})
-	vim.keymap.set("n", "<Leader>fw", "<cmd>Telescope workspaces<cr>", {})
+	vim.keymap.set("n", "<Leader>ff", builtin.find_files, opts)
+	vim.keymap.set("n", "<Leader>fg", builtin.live_grep, opts)
+	vim.keymap.set("n", "<Leader>fb", builtin.buffers, opts)
+	vim.keymap.set("n", "<Leader>fh", builtin.help_tags, opts)
+	vim.keymap.set("n", "<Leader>fo", builtin.oldfiles, opts)
+	vim.keymap.set("n", "<Leader>fw", "<cmd>Telescope workspaces<cr>", opts)
 	--  vim.keymap.set(
 	--  	"n",
 	--  	"<Leader>fh",
@@ -83,27 +82,8 @@ MY_KEYMAPS.OnTelescopeReady = function()
 	--  )
 end
 
--- https://github.com/L3MON4D3/LuaSnip/blob/master/README.md#keymaps
--- MY_KEYMAPS.onLuasnipReady = function()
--- 	vim.keymap.set({ "i", "s" }, "<Tab>", "<cmd>lua require('luasnip').jump(1)<cr>", { silent = true })
--- 	vim.keymap.set({ "i", "s" }, "<S-Tab>", "<cmd>lua require('luasnip').jump(-1)<cr>", { silent = true })
--- end
-
+vim.api.nvim_set_keymap("n", "<leader>ql", [[<cmd>lua require("persistence").load({ last = true })<cr>]], {})
 
 MY_KEYMAPS.OnTelescopeReady()
 -- MY_KEYMAPS.onLuasnipReady()
 MY_KEYMAPS.OnLSPAttach()
-
--- vim.api.nvim_set_keymap(
--- 	"n",
--- 	"<C-I>",
--- 	":lua require('_headers_mappings').MAPPING_HEADERS.Delbuffers()<CR>",
--- 	{ noremap = true }
--- )
--- local function openUrlInBrowser()
---     local currentWORD = vim.fn.expand("<cWORD>")
---     if string.find(currentWORD,"https://%s+")
---     then
---         vim.cmd("normal \"*yiw")
---     end
--- end
