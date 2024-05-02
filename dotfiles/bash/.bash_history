@@ -6858,3 +6858,44 @@ echo ${eso#*/}
 echo ${eso##*/}
 clear
 exit
+git pull origin main 
+clear
+git checkout v0.37.1
+lal
+yay -S gdb ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus hyprlang hyprcursor
+paru -S gdb ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus hyprlang hyprcursor
+cleawr
+clear
+q
+exit
+pstree
+exit
+workspace=(["kitty"]=1 ["opera"]=2 ["neovide"]=3 ["chromium"]=2 ["edge"]=2)
+class=(["kitty"]=1 ["opera"]="Opera" ["neovide"]=3 ["chromium"]=2 ["edge"]=2)
+echo ${workspace["opera"]} 
+echo ${class["opera"]} 
+class=(["kitty"]="eso" ["opera"]="Opera" ["neovide"]="aq" ["chromium"]=2 ["edge"]=2)
+echo ${class["opera"]} 
+workspace=(["kitty"]=1 ["opera"]="aaa" ["neovide"]=3 ["chromium"]=2 ["edge"]=2)
+echo ${workspace["opera"]} 
+echo ${class["opera"]} 
+workspace=(["kitty"]='bbb' ["opera"]='aaa')
+echo ${workspace['kitty']}
+workspace=([kitty]=bbb [opera]=aaa)
+echo ${workspace['kitty']}
+echo ${workspace[kitty]}
+workspace=(["kitty"]='bbb' ["opera"]='aaa')
+echo ${workspace[kitty]}
+echo ${workspace[opera]}
+echo ${workspace[kitty]}
+declare -A ww
+ww=([a]=b [b]=c [c]=d)
+echo ${ww[a]}
+echo ${ww[b]}
+echo ${ww[d]}
+echo ${ww[c]}
+exit
+declare -h
+declare --help
+clear
+exit

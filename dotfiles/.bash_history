@@ -94,3 +94,13 @@ exit
 clear
 faillock --user asbel --reset
 exit
+systemctl start solr
+systemctl status solr
+solr start
+solr start -force
+clear
+exit
+faillock --user asbel --reset
+reboot
+vim /var/lib/postgres/data/pg_hba.conf 
+exit

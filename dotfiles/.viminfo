@@ -11,27 +11,85 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/name = 
+~Msle0/\<mainMod\>
 
 # Last Substitute Search Pattern:
-~MSle0&\.\/src
+~MSle0~&\(\~\/\)\?\.config\/
 
 # Last Substitute String:
-$\/home\/asbel\/.xdg\/config\/eww\/src
+$\$XDG_CONFIG_HOME
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1714526302,,"q"
+:bd
+|2,0,1714526301,,"bd"
+:wq
+|2,0,1713679297,,"wq"
+:w
+|2,0,1713679296,,"w"
+:bn
+|2,0,1712888255,,"bn"
+:Ex
+|2,0,1712889902,,"Ex"
+:bp
+|2,0,1712889855,,"bp"
+:%s/\(\~\/\)\?\.config\//\$XDG_CONFIG_HOME/g
+|2,0,1712857845,,"%s/\\(\\~\\/\\)\\?\\.config\\//\\$XDG_CONFIG_HOME/g"
+:%s/\(\~\/\)\?\.config\/\$XDG_CONFIG_HOME/g
+|2,0,1712857836,,"%s/\\(\\~\\/\\)\\?\\.config\\/\\$XDG_CONFIG_HOME/g"
+:e /home/asbel/.xdg/config/dotfiles/hyprlandThemes/of_mine/waybar/config
+|2,0,1712846907,,"e /home/asbel/.xdg/config/dotfiles/hyprlandThemes/of_mine/waybar/config"
+:e ../hyprpaper/everforest-light.conf
+|2,0,1712382249,,"e ../hyprpaper/everforest-light.conf"
+:cd 
+|2,0,1712382237,,"cd "
+:cd %p%h
+|2,0,1712382231,,"cd %p%h"
+:cd %h%p
+|2,0,1712382223,,"cd %h%p"
+:e freeze-screenshot.sh
+|2,0,1712382217,,"e freeze-screenshot.sh"
+:~
+|2,0,1712380192,,"~"
+:%s/\~\/.
+|2,0,1712380162,,"%s/\\~\\/."
+:%s/\~\/.config/$XDG_CONFIG_HOME/g
+|2,0,1712380135,,"%s/\\~\\/.config/$XDG_CONFIG_HOME/g"
+:%s/
+|2,0,1712380106,,"%s/"
+:noh
+|2,0,1712379376,,"noh"
+:reg
+|2,0,1712378259,,"reg"
+:e ../../of_mine/hypr/hyprland.conf 
+|2,0,1712377861,,"e ../../of_mine/hypr/hyprland.conf "
+:e 
+|2,0,1712377827,,"e "
+:e
+|2,0,1712377473,,"e"
+:e ../../DataGrip/bin/datagrip64.vmoptions
+|2,0,1712332323,,"e ../../DataGrip/bin/datagrip64.vmoptions"
+:%s/\s\+/:/g
+|2,0,1712329975,,"%s/\\s\\+/:/g"
+:e hyprland.conf
+|2,0,1712069563,,"e hyprland.conf"
 :qa!
-|2,0,1711211010,,"qa!"
+|2,0,1711861392,,"qa!"
+:term
+|2,0,1711425566,,"term"
+:.,.+12.12-2
+|2,0,1711425357,,".,.+12.12-2"
+:.25.0.4-1
+|2,0,1711425357,,".25.0.4-1"
+:w /home/asbel/aquello
+|2,0,1711378597,,"w /home/asbel/aquello"
+:set wrap
+|2,0,1711377465,,"set wrap"
+:'<,'>!chrome open
+|2,0,1711377376,,"'<,'>!chrome open"
 ::q
 |2,0,1711034650,,":q"
-:q
-|2,0,1711034493,,"q"
-:wq
-|2,0,1710994027,,"wq"
-:w
-|2,0,1710715747,,"w"
-:term
-|2,0,1710715564,,"term"
 :set guifont
 |2,0,1710714863,,"set guifont"
 :set guifont=
@@ -48,10 +106,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,0,1710715093,,"h terminal"
 :h term
 |2,0,1710715080,,"h term"
-:bn
-|2,0,1710712811,,"bn"
-:e 
-|2,0,1710712748,,"e "
 :colorscheme
 |2,0,1710534355,,"colorscheme"
 :!echo $ZSH_CUSTOM
@@ -64,8 +118,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,0,1709789618,,"colorscheme ayu:"
 :set termguicolors
 |2,0,1709789300,,"set termguicolors"
-:bp
-|2,0,1709789186,,"bp"
 :buffers
 |2,0,1709788532,,"buffers"
 :%s/\.\/src/\/home\/asbel\/.xdg\/config\/eww\/src
@@ -116,14 +168,10 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,0,1709421989,,"h mapping"
 :jkjkjkasdfjjkjkjkjk
 |2,0,1709436615,,"jkjkjkasdfjjkjkjkjk"
-:e
-|2,0,1709436592,,"e"
 :e .xdg/config/dotfiles/environment
 |2,0,1709436513,,"e .xdg/config/dotfiles/environment"
 :bd!
 |2,0,1709436204,,"bd!"
-:bd
-|2,0,1709436199,,"bd"
 :h omap
 |2,0,1709436063,,"h omap"
 :nmap
@@ -172,56 +220,62 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,0,1709179216,,"e .xdg/config/waybar/style.css"
 :noremap <Leader>a :w<CR>:!waybar<CR>
 |2,0,1709154613,,"noremap <Leader>a :w<CR>:!waybar<CR>"
-:e ~/.xdg/config/waybar/config
-|2,0,1709094396,,"e ~/.xdg/config/waybar/config"
-:%s/^\s\+//g
-|2,0,1709093824,,"%s/^\\s\\+//g"
-:%s/\s\{5}/   /g
-|2,0,1709093736,,"%s/\\s\\{5}/   /g"
-:set hidden
-|2,0,1709093686,,"set hidden"
-:set hidden=true
-|2,0,1709093682,,"set hidden=true"
-:set hidden= true
-|2,0,1709093677,,"set hidden= true"
-:set highlight=off
-|2,0,1709093669,,"set highlight=off"
-:%s/\s\{5}/    /g
-|2,0,1709093600,,"%s/\\s\\{5}/    /g"
-:%s/\s$//g
-|2,0,1709091870,,"%s/\\s$//g"
-:noremap <Leader>j ddGo<esc>p
-|2,0,1709094562,,"noremap <Leader>j ddGo<esc>p"
-:set dictionary=off
-|2,0,1709090782,,"set dictionary=off"
-:e /etc/makepkg.conf
-|2,0,1709082136,,"e /etc/makepkg.conf"
-:noremap <F5> :!g++ %<CR>:!./a.out<CR>
-|2,0,1709049691,,"noremap <F5> :!g++ %<CR>:!./a.out<CR>"
-:noremap <F5> :!echo %s<CR>
-|2,0,1709049663,,"noremap <F5> :!echo %s<CR>"
-:noremap <F5> :!g++ %s<CR>
-|2,0,1709049618,,"noremap <F5> :!g++ %s<CR>"
-:!read
-|2,0,1709049562,,"!read"
-:noremap <F5> :!g++ %s<CR>:!./a.out<CR>:!read
-|2,0,1709049559,,"noremap <F5> :!g++ %s<CR>:!./a.out<CR>:!read"
-:noremap <F5> :!g++ %s<CR>!./a.out<CR>
-|2,0,1709049529,,"noremap <F5> :!g++ %s<CR>!./a.out<CR>"
-:noremap <F5> g++ %s<CR>!./a.out<CR>
-|2,0,1709049508,,"noremap <F5> g++ %s<CR>!./a.out<CR>"
-:noremap <C-S> g++ %s<CR>!./a.out<CR>
-|2,0,1709049474,,"noremap <C-S> g++ %s<CR>!./a.out<CR>"
-:set syntax=cpp
-|2,0,1709049282,,"set syntax=cpp"
-:noremap <C-s> :w<CR>
-|2,0,1708974386,,"noremap <C-s> :w<CR>"
-:w:
-|2,0,1708974381,,"w:"
-:noremap <C-s> :w
-|2,0,1708974376,,"noremap <C-s> :w"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1712889902,,"@$"
+? ^$
+|2,1,1712889902,,"^$"
+?/input
+|2,1,1712889872,47,"input"
+?/maindisplay
+|2,1,1712857870,47,"maindisplay"
+? \(\~\/\)\?\.config\/
+|2,1,1712857845,,"\\(\\~\\/\\)\\?\\.config\\/"
+? \(\~\/\)\?\.config\/\$XDG_CONFIG_HOME
+|2,1,1712857836,,"\\(\\~\\/\\)\\?\\.config\\/\\$XDG_CONFIG_HOME"
+? \<mainMod\>
+|2,1,1712857626,,"\\<mainMod\\>"
+?/bind
+|2,1,1712857389,47,"bind"
+?/floating: 0.*\n.*\n.class: java
+|2,1,1712717484,47,"floating: 0.*\\n.*\\n.class: java"
+?/fl
+|2,1,1712717385,47,"fl"
+?/floating: 1.*\n.*\n.class: java
+|2,1,1712717358,47,"floating: 1.*\\n.*\\n.class: java"
+?/floating: 1
+|2,1,1712717304,47,"floating: 1"
+?/floating: 0
+|2,1,1712717277,47,"floating: 0"
+?/\~
+|2,1,1712380201,47,"\\~"
+? \~\/.config
+|2,1,1712380135,,"\\~\\/.config"
+? \<exec\>
+|2,1,1712378101,,"\\<exec\\>"
+? \s\+
+|2,1,1712329975,,"\\s\\+"
+?/generic
+|2,1,1711859940,47,"generic"
+?/sha256sum
+|2,1,1711859561,47,"sha256sum"
+?/validation
+|2,1,1711859542,47,"validation"
+?/Validating
+|2,1,1711859529,47,"Validating"
+?/-s
+|2,1,1711858411,47,"-s"
+?/source
+|2,1,1711858404,47,"source"
+?/config_local
+|2,1,1711682845,47,"config_local"
+?/flag
+|2,1,1711601151,47,"flag"
+?/flags
+|2,1,1711600542,47,"flags"
+?/flto
+|2,1,1711567674,47,"flto"
 ?/name = 
 |2,1,1711034638,47,"name = "
 ?/build_pip_package
@@ -252,10 +306,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,1,1709758813,,"\\.\\/src"
 ?/pro
 |2,1,1709741572,47,"pro"
-? @$
-|2,1,1709740167,,"@$"
-? ^$
-|2,1,1709740167,,"^$"
 ?/cursor
 |2,1,1709697977,47,"cursor"
 ? \<GDK_BACKEND\>
@@ -272,8 +322,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,1,1709670565,,"totla"
 ?/totla
 |2,1,1709670508,47,"totla"
-?/flags
-|2,1,1709506173,47,"flags"
 ?/bits
 |2,1,1709446926,47,"bits"
 ?/depth
@@ -352,8 +400,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,1,1708732235,47,"scape"
 ?/esc
 |2,1,1708716866,47,"esc"
-?/flag
-|2,1,1708673045,47,"flag"
 ?/natura
 |2,1,1708668289,47,"natura"
 ?/workspace
@@ -376,52 +422,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 |2,1,1708326441,47,"error"
 ?/erro
 |2,1,1708321666,47,"erro"
-?/cgo
-|2,1,1708320434,47,"cgo"
-?/.rules
-|2,1,1708320425,47,".rules"
-?/Make.roules
-|2,1,1708320391,47,"Make.roules"
-?/makefile
-|2,1,1708320383,47,"makefile"
-?/cgo:
-|2,1,1708320324,47,"cgo:"
-?/make
-|2,1,1708320309,47,"make"
-? $(CGO_REQUIRED)
-|2,1,1708312755,,"$(CGO_REQUIRED)"
-?/CGO_ENABLED
-|2,1,1708312341,47,"CGO_ENABLED"
-?/CGO
-|2,1,1708310842,47,"CGO"
-?/.srcpackages
-|2,1,1708240580,47,".srcpackages"
-?/tmp
-|2,1,1708239336,47,"tmp"
-?/<C-F
-|2,1,1708239091,47,"<C-F"
-?/getsour
-|2,1,1708238282,47,"getsour"
-? \<getSources\>
-|2,1,1708237835,,"\\<getSources\\>"
-?/sources
-|2,1,1708237827,47,"sources"
-? :.*
-|2,1,1707806458,,":.*"
-?/none
-|2,1,1707801883,47,"none"
-? ^[a-zA-Z0-9\-\_]*: None
-|2,1,1707801872,,"^[a-zA-Z0-9\\-\\_]*: None"
-?/.*0 altered files
-|2,1,1707795450,47,".*0 altered files"
-?/%w
-|2,1,1707619960,47,"%w"
-?/%n
-|2,1,1707619952,47,"%n"
-?/digest
-|2,1,1707592856,47,"digest"
-?/werror
-|2,1,1707425778,47,"werror"
 
 # Expression History (newest to oldest):
 
@@ -431,63 +431,42 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 
 # Registers:
 "0	CHAR	0
-	JetBrainsMonoNL NFM ExtraBold Italic
-|3,0,0,0,1,0,1710715637,"JetBrainsMonoNL NFM ExtraBold Italic"
+	|
+|3,0,0,0,1,0,1712889906,"|"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1710715653,""
+	    color: @red;
+|3,0,1,1,1,0,1712889064,"    color: @red;"
 "2	LINE	0
-	 font_family JetBrainsMonoNL NFM Bold
-|3,0,2,1,1,0,1710715503," font_family JetBrainsMonoNL NFM Bold"
+	    background-color: @bg_blue;
+|3,0,2,1,1,0,1712888272,"    background-color: @bg_blue;"
 "3	LINE	0
-	 JetBrainsMono NF SemiBold
-|3,0,3,1,1,0,1710715452," JetBrainsMono NF SemiBold"
+	    background-color: @red
+|3,0,3,1,1,0,1712888163,"    background-color: @red"
 "4	LINE	0
-	# exec-once = /usr/lib/polkit-kde-authentication-agent-1
-|3,0,4,1,1,0,1710714961,"# exec-once = /usr/lib/polkit-kde-authentication-agent-1"
+	::placeholder {
+	    color: @red
+	}
+|3,0,4,1,3,0,1712887966,"::placeholder {","    color: @red","}"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1710712817,""
-"6	LINE	0
-	windowrulev2 = fullscreen,class:^(neovide)$
-|3,0,6,1,1,0,1710712806,"windowrulev2 = fullscreen,class:^(neovide)$"
+	::placeholder {
+	    color: @red
+	}
+|3,0,5,1,3,0,1712887961,"::placeholder {","    color: @red","}"
+"6	BLOCK	14
+	 pkill wofi || 
+	 pkill wofi || 
+	 pkill wofi || 
+	 pkill wofi || 
+|3,0,6,2,4,14,1712857952," pkill wofi || "," pkill wofi || "," pkill wofi || "," pkill wofi || "
 "7	LINE	0
-	    zsh-autosuggestions
-|3,0,7,1,1,0,1710534290,"    zsh-autosuggestions"
-"8	BLOCK	0
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-|3,0,8,2,15,0,1710534286," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "
-"9	BLOCK	0
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-|3,0,9,2,15,0,1710534283,"#","#","#","#","#","#","#","#","#","#","#","#","#","#","#"
+	srce eso
+|3,0,7,1,1,0,1712857602,"srce eso"
+"8	LINE	0
+	
+|3,0,8,1,1,0,1712857567,""
+"9	LINE	0
+	
+|3,0,9,1,1,0,1712857567,""
 "a	CHAR	0
 	0f D20a 17|gPDj
 |3,0,10,0,1,0,1705524708,"0f D20a 17|gPDj"
@@ -509,9 +488,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 "l	CHAR	0
 	
 |3,0,21,0,1,0,1709788979,""
-"q@	CHAR	0
-	f €ýaiq€kb€ýk€ýk
-|3,2,26,0,1,0,1710533871,"f €ýaiq€kb€ýk€ýk"
 "s	CHAR	0
 	€ýa€ýa
 |3,0,28,0,1,0,1704582736,"€ýa€ýa"
@@ -519,321 +495,690 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 	€ýau:€ku€kl€kr€kr \:q:q€ýau:%Q€kb!colu	 -t -s' 'u/ €ýa
 |3,0,30,0,1,0,1705535252,"€ýau:€ku€kl€kr€kr \\:q:q€ýau:%Q€kb!colu	 -t -s' 'u/ €ýa"
 ""-	CHAR	0
-	"/home/asbel/projects/tensorflowenv/lib/python3.11/site-packages/keras"
-|3,1,36,0,1,0,1710994023,"\"/home/asbel/projects/tensorflowenv/lib/python3.11/site-packages/keras\""
+	peer
+|3,1,36,0,1,0,1713426665,"peer"
 
 # File marks:
-'0  102  0  /etc/pacman.conf
-|4,48,102,0,1711211010,"/etc/pacman.conf"
-'1  266  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,49,266,4,1711034650,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
-'2  239  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,50,239,12,1711034493,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
-'3  239  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,51,239,12,1711034493,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
-'4  1  11  ~/projects/tests/eso.py
-|4,52,1,11,1710994027,"~/projects/tests/eso.py"
-'5  1  77  ~/projects/tests/eso.py
-|4,53,1,77,1710993830,"~/projects/tests/eso.py"
-'6  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,54,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
-'7  27  11  ~/.xdg/config/kitty/kitty.conf
-|4,55,27,11,1710715698,"~/.xdg/config/kitty/kitty.conf"
-'8  27  11  ~/.xdg/config/kitty/kitty.conf
-|4,56,27,11,1710715698,"~/.xdg/config/kitty/kitty.conf"
-'9  9  40  ~/.xdg/config/kitty/kitty.conf
-|4,57,9,40,1710715520,"~/.xdg/config/kitty/kitty.conf"
+'0  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,48,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+'1  3  0  /home/home/eso
+|4,49,3,0,1714265746,"/home/home/eso"
+'2  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,50,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+'3  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,51,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+'4  99  0  /etc/pacman.conf
+|4,52,99,0,1713679806,"/etc/pacman.conf"
+'5  25  0  /home/home/.xdg/config/dotfiles/hyprlandThemes/of_mine/hypr/hyprland.conf
+|4,53,25,0,1713679297,"/home/home/.xdg/config/dotfiles/hyprlandThemes/of_mine/hypr/hyprland.conf"
+'6  7  0  ~/.directory
+|4,54,7,0,1713600801,"~/.directory"
+'7  54  12  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,55,54,12,1713597260,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+'8  117  68  /var/lib/postgres/data/pg_hba.conf
+|4,56,117,68,1713426668,"/var/lib/postgres/data/pg_hba.conf"
+'9  1  0  ~/NERD_tree_win_1
+|4,57,1,0,1713426404,"~/NERD_tree_win_1"
 
 # Jumplist (newest first):
--'  102  0  /etc/pacman.conf
-|4,39,102,0,1711211010,"/etc/pacman.conf"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  1  0  /home/home/eso
+|4,39,1,0,1714265744,"/home/home/eso"
+-'  1  0  /home/home/eso
+|4,39,1,0,1714265744,"/home/home/eso"
+-'  1  0  /home/home/eso
+|4,39,1,0,1714265744,"/home/home/eso"
+-'  1  0  /home/home/eso
+|4,39,1,0,1714265744,"/home/home/eso"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  1  0  /usr/local/bin/uclv_proxy_ovpn
+|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
+-'  99  0  /etc/pacman.conf
+|4,39,99,0,1713679806,"/etc/pacman.conf"
 -'  1  0  /etc/pacman.conf
-|4,39,1,0,1711211001,"/etc/pacman.conf"
--'  266  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,266,4,1711034650,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  266  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,266,4,1711034650,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  29  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,29,4,1711034646,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  29  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,29,4,1711034646,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  261  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,261,4,1711034644,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  261  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,261,4,1711034644,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  248  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,248,4,1711034643,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  248  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,248,4,1711034643,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  235  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,235,4,1711034641,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  235  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,235,4,1711034641,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  84  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,84,4,1711034639,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  79  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,79,4,1711034639,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  84  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,84,4,1711034639,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  79  4  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,79,4,1711034639,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  1  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,1,0,1711034638,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  1  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,1,0,1711034638,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  77  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,77,0,1711034633,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  77  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,77,0,1711034633,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  239  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,239,12,1711034493,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  239  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,239,12,1711034493,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  239  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,239,12,1711034493,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  239  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,239,12,1711034493,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  237  9  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,237,9,1711034490,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  235  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,235,12,1711034490,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  237  9  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,237,9,1711034490,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  237  9  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,237,9,1711034490,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  235  12  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,235,12,1711034490,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  237  9  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,237,9,1711034490,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  15  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,15,0,1711034476,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  15  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,15,0,1711034476,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  15  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,15,0,1711034476,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  15  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,15,0,1711034476,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  1  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,1,0,1711034468,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  1  0  /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-|4,39,1,0,1711034468,"/tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  11  ~/projects/tests/eso.py
-|4,39,1,11,1710994027,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  1  77  ~/projects/tests/eso.py
-|4,39,1,77,1710993830,"~/projects/tests/eso.py"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  22  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,22,0,1710715749,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
--'  1  0  ~/.xdg/config/kitty/kitty.conf
-|4,39,1,0,1710715704,"~/.xdg/config/kitty/kitty.conf"
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
+-'  1  0  /etc/pacman.conf
+|4,39,1,0,1713679791,"/etc/pacman.conf"
 
 # History of marks within files (newest to oldest):
 
+> /home/home/Documents/nvim/lua/_headers_plugins.lua
+	*	1714526299	0
+	"	111	0
+
+> /home/home/Documents/nvim/lua/_headers_mappings.lua
+	*	1714526288	0
+	"	1	0
+
+> /home/home/eso
+	*	1714265745	0
+	"	3	0
+
+> /usr/local/bin/uclv_proxy_ovpn
+	*	1714158382	0
+	"	1	0
+
+> /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
+	*	1713861914	0
+	"	46	0
+
 > /etc/pacman.conf
-	*	1711211008	0
-	"	102	0
+	*	1713679805	0
+	"	99	0
 	^	102	0
 	.	101	2
 	+	101	2
 
-> /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
-	*	1711034646	0
-	"	266	4
+> /home/home/.xdg/config/dotfiles/hyprlandThemes/of_mine/hypr/hyprland.conf
+	*	1713679296	0
+	"	25	0
+	^	25	2
+	.	26	0
+	+	26	0
 
-> ~/projects/tests/eso.py
-	*	1710994026	0
-	"	1	11
-	^	1	12
-	.	1	11
-	+	1	11
+> /home/home/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr/hyprland.conf
+	*	1713679275	0
+	"	87	27
 
-> ~/.xdg/config/kitty/kitty.conf
-	*	1710715747	0
-	"	22	0
-	^	12	20
-	.	27	11
-	+	2454	0
-	+	2455	52
-	+	22	0
-	+	9	37
-	+	10	0
-	+	9	37
-	+	9	0
-	+	9	40
-	+	27	11
-	+	10	12
-	+	11	14
-	+	12	55
-	+	10	0
+> ~/.directory
+	*	1713600800	0
+	"	7	0
+	^	7	0
+	.	6	9
+	+	4	9
+	+	6	9
+
+> /home/home/.xdg/config/dotfiles/zsh/.zshrc
+	*	1713597259	0
+	"	54	12
+	^	54	13
+	.	54	13
+	+	53	40
+	+	55	0
+	+	54	13
+
+> /var/lib/postgres/data/pg_hba.conf
+	*	1713426667	0
+	"	117	68
+	^	117	69
+	.	117	68
+	+	118	0
+	+	117	68
+
+> ~/NERD_tree_win_1
+	*	1713426403	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /usr/include/wofi-1/wofi_api.h
+	*	1712889910	0
+	"	1	0
+
+> /usr/include/wofi-1/widget_builder_api.h
+	*	1712889900	0
+	"	34	0
+	^	34	26
+	.	34	0
+	+	34	0
+
+> /usr/include/wofi-1/config.h
+	*	1712889847	0
+	"	24	0
+
+> /usr/include/wofi-1/NERD_tree_win_1
+	*	1712889842	0
+	"	5	0
+	.	1	0
+	+	1	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/wofi/themes/everforest.css
+	*	1712889617	0
+	"	40	7
+	^	40	10
+	.	40	7
+	+	15	3
+	+	12	25
+	+	13	13
+	+	13	0
+	+	29	13
+	+	28	0
+	+	29	15
+	+	43	15
+	+	43	0
+	+	43	15
+	+	43	5
+	+	39	0
+	+	43	14
+	+	43	0
+	+	38	0
+	+	40	11
+	+	42	0
+	+	44	0
+	+	42	15
+	+	48	0
+	+	40	17
+	+	42	0
+	+	41	40
+	+	40	7
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/wofi/colors/everforest.css
+	*	1712888249	0
+	"	8	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr/hyprland.conf
+	*	1712858008	0
+	"	100	0
+	^	99	125
+	.	99	124
+	+	18	1
+	+	19	0
+	+	26	0
+	+	27	0
+	+	29	0
+	+	30	0
+	+	32	0
+	+	34	0
+	+	50	0
+	+	56	0
+	+	58	0
+	+	66	0
+	+	72	0
+	+	74	0
+	+	70	1
+	+	71	17
+	+	74	0
+	+	73	0
+	+	76	77
+	+	76	0
+	+	78	0
+	+	79	0
+	+	81	0
+	+	82	0
+	+	104	0
+	+	1	0
+	+	5	1
+	+	6	0
+	+	16	1
+	+	28	1
+	+	27	0
+	+	16	1
+	+	23	0
+	+	34	0
+	+	50	0
+	+	82	0
+	+	82	18
+	+	82	0
+	+	16	0
+	+	67	0
+	+	34	0
+	+	82	0
+	+	104	1
+	+	104	0
+	+	112	81
+	+	112	0
+	+	104	1
+	+	104	0
+	+	104	1
+	+	104	0
+	+	104	77
+	+	16	1
+	+	35	0
+	+	77	0
+	+	104	0
+	+	105	0
+	+	104	0
+	+	82	0
+	+	77	0
+	+	78	0
+	+	108	0
+	+	109	0
+	+	108	0
+	+	76	0
+	+	110	1
+	+	111	0
+	+	110	0
+	+	67	1
+	+	69	2
+	+	69	0
+	+	104	88
+	+	104	0
+	+	83	0
+	+	104	0
+	+	104	16
+	+	104	81
+	+	104	0
+	+	111	90
+	+	95	0
+	+	96	0
+	+	104	0
+	+	60	0
+	+	96	0
+	+	91	0
+	+	92	0
+	+	90	0
+	+	92	0
+	+	90	0
+	+	96	128
+	+	83	0
+	+	96	162
+	+	96	25
+	+	97	0
+	+	100	30
+	+	101	48
+	+	100	50
+	+	99	91
+	+	97	45
+	+	98	45
+	+	99	124
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr/themes/summer-day/summer-day.conf
+	*	1712857499	0
+	"	119	0
+	.	120	0
+	+	120	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/waybar/everforest-light/config
+	*	1712846978	0
+	"	12	29
+	^	12	30
+	.	12	29
+	+	12	29
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/waybar/everforest/config
+	*	1712846949	0
+	"	12	29
+	^	12	30
+	.	12	29
+	+	12	29
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/of_mine/waybar/config
+	*	1712846942	0
+	"	9	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/NERD_tree_win_1
+	*	1712846875	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/stuff
+	*	1712717484	0
+	"	7296	0
+
+> ~/apps/PyCharm/bin/pycharm64.vmoptions
+	*	1712580606	0
+	"	21	0
+	^	21	0
+	.	21	0
+	+	21	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr/hyprpaper/everforest.conf
+	*	1712382304	0
+	"	3	64
+	^	3	65
+	.	3	64
+	+	1	10
+	+	3	0
+	+	4	0
+	+	2	0
+	+	4	0
+	+	3	18
+	+	4	0
+	+	1	56
+	+	3	64
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr/hyprpaper/everforest-light.conf
+	*	1712382254	0
+	"	1	10
+	.	2	0
+	+	1	21
+	+	2	0
+	+	3	0
+	+	2	30
+	+	1	32
+	+	3	0
+	+	2	18
+	+	3	0
+	+	2	59
+	+	1	58
+	+	3	0
+	+	2	18
+	+	3	0
+	+	2	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr/themes/switch-theme.sh
+	*	1712381296	0
+	"	1	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr/scripts/switch-theme.sh
+	*	1712381178	0
+	"	44	0
+	.	4	0
+	+	4	0
+
+> ~/.xdg/config/dotfiles/hyprlandThemes/of_mine/hypr/hyprland.conf
+	*	1712380242	0
+	"	68	4
+	^	5	0
+	.	25	0
+	+	1	0
+	+	7	0
+	+	17	0
+	+	18	0
+	+	21	0
+	+	17	0
+	+	18	0
+	+	17	1
+	+	18	1
+	+	61	0
+	+	62	0
+	+	193	0
+	+	192	0
+	+	1	0
+	+	29	0
+	+	37	0
+	+	39	0
+	+	42	0
+	+	43	0
+	+	48	0
+	+	53	0
+	+	57	0
+	+	58	0
+	+	60	0
+	+	57	0
+	+	58	0
+	+	60	0
+	+	53	0
+	+	48	0
+	+	43	0
+	+	42	0
+	+	39	0
+	+	42	0
+	+	40	0
+	+	43	0
+	+	40	0
+	+	43	0
+	+	42	0
+	+	43	0
+	+	29	0
+	+	31	0
+	+	34	0
+	+	36	0
+	+	30	0
+	+	36	0
+	+	37	0
+	+	42	0
+	+	10	53
+	+	11	0
+	+	10	7
+	+	1	0
+	+	12	0
+	+	1	0
+	+	17	0
+	+	18	0
+	+	16	0
+	+	20	0
+	+	12	1
+	+	12	30
 	+	11	0
 	+	12	0
-	+	10	0
-	+	11	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	208	0
+	+	207	0
+	+	13	0
 	+	12	0
-	+	9	0
-	+	10	11
-	+	9	15
-	+	10	15
-	+	11	15
-	+	9	19
-	+	10	19
-	+	11	19
-	+	12	19
-	+	27	11
+	+	6	0
+	+	5	0
+	+	25	0
 
-> /usr/local/share/vim/vim91/doc/terminal.txt
-	*	1710715200	0
-	"	432	48
+> ~/.xdg/config/dotfiles/hyprlandThemes/of_mine/hypr/mappings.conf
+	*	1712379136	0
+	"	43	0
+	^	17	0
+	.	78	0
+	+	10	30
+	+	16	0
+	+	17	0
+	+	16	17
+	+	60	0
+	+	78	0
 
-> /usr/local/share/vim/vim91/doc/options.txt
-	*	1710715086	0
-	"	8286	6
+> ~/apps/DataGrip/bin/datagrip64.vmoptions
+	*	1712332326	0
+	"	21	0
+
+> ~/solr/solr-9.5.0/example/exampledocs/eso
+	*	1712330048	0
+	"	1	21372
+	^	1	21373
+	.	1	21373
+	+	1	0
+	+	1	21374
+	+	1	0
+	+	1	21373
+
+> /usr/share/solr/server/logs/solr-8983-console.log
+	*	1712326061	0
+	"	25	0
+
+> /var/log/solr/solr_gc.log
+	*	1712326027	0
+	"	19	0
+
+> /etc/passwd
+	*	1712325466	0
+	"	38	0
 
 > ~/.xdg/config/hypr/hyprland.conf
-	*	1710714988	0
-	"	20	3
-	.	15	0
-	+	141	41
-	+	141	62
-	+	141	51
-	+	141	74
-	+	141	77
-	+	140	0
-	+	141	0
-	+	140	0
-	+	141	0
+	*	1712069742	0
+	"	108	0
+	^	108	1
+	.	108	0
+	+	140	41
+	+	140	62
+	+	140	51
+	+	140	74
+	+	140	77
 	+	139	0
 	+	140	0
+	+	139	0
+	+	140	0
+	+	138	0
+	+	139	0
 	+	13	7
 	+	14	0
 	+	28	0
 	+	13	7
-	+	140	0
-	+	140	16
+	+	139	0
+	+	139	16
 	+	13	0
-	+	145	0
-	+	143	0
-	+	140	0
-	+	145	0
+	+	144	0
+	+	142	0
+	+	139	0
+	+	144	0
 	+	5	0
 	+	6	0
 	+	10	0
@@ -904,17 +1249,19 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 	+	5	0
 	+	4	0
 	+	11	30
-	+	180	0
+	+	179	0
 	+	24	61
 	+	19	20
 	+	17	0
 	+	15	0
+	+	123	0
+	+	108	0
 
 > ~/.xdg/config/hypr/mappings.conf
-	*	1710713352	0
-	"	16	0
-	^	15	30
-	.	16	0
+	*	1712069663	0
+	"	11	11
+	^	11	39
+	.	11	40
 	+	3	0
 	+	59	0
 	+	57	0
@@ -942,6 +1289,225 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 	+	12	36
 	+	78	0
 	+	16	0
+	+	10	0
+	+	11	40
+
+> ~/Documents/sources/linux-6.8.2/Documentation/rust/quick-start.rst
+	*	1711862864	0
+	"	254	4
+
+> /etc/systemd/network/31-bond0-interface1.network
+	*	1711861389	0
+	"	6	16
+	^	6	17
+	.	6	17
+	+	6	17
+
+> /etc/systemd/network/00ehternet.network
+	*	1711860276	0
+	"	8	0
+
+> ~/Documents/sources/linux-6.8.2/arch/x86/Makefile
+	*	1711859961	0
+	"	158	52
+	^	158	54
+	.	158	53
+	+	157	61
+	+	157	54
+	+	159	0
+	+	158	53
+
+> ~/build/others/linux-mainline/linux-mainline/arch/x86/Makefile
+	*	1711859663	0
+	"	162	52
+	^	162	53
+	.	162	52
+	+	162	52
+
+> ~/build/others/linux-mainline/PKGBUILD
+	*	1711859590	0
+	"	49	0
+
+> /usr/lib/systemd/network/80-wifi-station.network.example
+	*	1711859129	0
+	"	14	0
+
+> /usr/lib/systemd/network/99-default.link
+	*	1711859083	0
+	"	1	0
+
+> /usr/local/bin/materia
+	*	1711858421	0
+	"	386	21
+	^	387	10
+	.	387	10
+	+	19	0
+	+	60	0
+	+	314	19
+	+	302	22
+	+	384	11
+	+	386	87
+	+	388	0
+	+	386	61
+	+	1	0
+	+	387	10
+
+> ~/Documents/sources/linux-6.8.2/.config
+	*	1711682857	0
+	"	33	32
+	^	33	33
+	.	33	32
+	+	33	32
+
+> /etc/makepkg.conf
+	*	1711682608	0
+	"	127	0
+	^	127	2
+	.	128	0
+	+	12	0
+	+	177	24
+	+	172	0
+	+	47	15
+	+	103	0
+	+	18	0
+	+	128	0
+
+> /etc/makepkg.conf.pacold
+	*	1711601177	0
+	"	50	0
+
+> /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/plugin/include/config.h
+	*	1711601136	0
+	"	10	0
+
+> /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/plugin/include/config/linux.h
+	*	1711601124	0
+	"	41	0
+
+> /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/plugin/include/config/linux
+	*	1711601117	0
+	"	1	0
+
+> ~/Documents/not_req
+	*	1711425879	0
+	"	1	0
+	.	109	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	5	0
+	+	4	0
+	+	8	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	15	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	22	0
+	+	37	0
+	+	40	0
+	+	42	0
+	+	41	0
+	+	44	0
+	+	45	0
+	+	47	0
+	+	46	0
+	+	50	0
+	+	54	0
+	+	55	0
+	+	77	0
+	+	55	0
+	+	82	0
+	+	85	0
+	+	90	0
+	+	91	0
+	+	93	0
+	+	94	0
+	+	100	0
+	+	103	0
+	+	104	0
+	+	105	0
+	+	104	0
+	+	106	0
+	+	109	0
+
+> ~/Documents/eso
+	*	1711408444	0
+	"	1	0
+	^	61	0
+	.	61	0
+	+	83	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	12	0
+	+	17	0
+	+	20	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	48	0
+	+	49	0
+	+	60	0
+	+	61	0
+
+> /tmp/build/tensorflow/tensorflow/tools/pip_package/BUILD
+	*	1711034646	0
+	"	266	4
+
+> ~/projects/tests/eso.py
+	*	1710994026	0
+	"	1	11
+	^	1	12
+	.	1	11
+	+	1	11
+
+> ~/.xdg/config/kitty/kitty.conf
+	*	1710715747	0
+	"	22	0
+	^	12	20
+	.	27	11
+	+	2454	0
+	+	2455	52
+	+	22	0
+	+	9	37
+	+	10	0
+	+	9	37
+	+	9	0
+	+	9	40
+	+	27	11
+	+	10	12
+	+	11	14
+	+	12	55
+	+	10	0
+	+	11	0
+	+	12	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	9	0
+	+	10	11
+	+	9	15
+	+	10	15
+	+	11	15
+	+	9	19
+	+	10	19
+	+	11	19
+	+	12	19
+	+	27	11
+
+> /usr/local/share/vim/vim91/doc/terminal.txt
+	*	1710715200	0
+	"	432	48
+
+> /usr/local/share/vim/vim91/doc/options.txt
+	*	1710715086	0
+	"	8286	6
 
 > ~/.xdg/config/dotfiles/zsh/.zshrc
 	*	1710534455	0
@@ -1164,12 +1730,6 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 	+	1	15
 	+	2	17
 	+	3	0
-
-> ~/NERD_tree_win_1
-	*	1709788304	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/.xdg/config/eww/src/yuck/_variables.yuck
 	*	1709760508	0
@@ -1620,680 +2180,3 @@ $\/home\/asbel\/.xdg\/config\/eww\/src
 	+	4	0
 	+	5	0
 	+	4	0
-
-> ~/.packaging/others/oculante/Cargo.toml
-	*	1709506175	0
-	"	73	3
-
-> ~/oculante/PKGBUILD
-	*	1709505515	0
-	"	23	13
-
-> ~/.xdg/config/chromium-flags.conf
-	*	1709504049	0
-	"	1	0
-	^	1	24
-	.	1	0
-	+	1	25
-	+	1	0
-	+	19	0
-	+	1	24
-	+	19	0
-	+	1	28
-	+	1	0
-	+	19	0
-	+	14	0
-	+	15	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	1	0
-	+	8	0
-	+	1	0
-	+	8	0
-	+	1	0
-	+	8	0
-	+	1	0
-	+	8	0
-	+	1	0
-	+	8	0
-	+	1	0
-	+	2	0
-	+	8	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	28
-	+	3	0
-	+	2	0
-	+	1	25
-	+	1	0
-	+	1	1
-	+	1	20
-	+	1	0
-	+	5	0
-	+	1	0
-	+	5	0
-	+	8	0
-	+	1	0
-	+	2	0
-	+	1	1
-	+	5	0
-	+	4	0
-	+	3	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	1	0
-
-> /usr/share/applications/okularApplication_pdf.desktop
-	*	1709497788	0
-	"	186	0
-
-> /sys/devices/pci0000:00/0000:00:08.1/0000:03:00.0/pp_power_profile_mode
-	*	1709458906	0
-	"	1	1
-
-> ~/.xdg/config/dotfiles/environment
-	*	1709452097	0
-	"	13	20
-	^	13	21
-	.	13	20
-	+	14	0
-	+	10	55
-	+	14	0
-	+	12	0
-	+	13	20
-
-> ~/not_req
-	*	1709450111	0
-	"	53	0
-	.	54	0
-	+	1	0
-	+	3	0
-	+	6	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	25	0
-	+	28	0
-	+	30	0
-	+	34	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	47	0
-	+	52	0
-	+	54	0
-
-> ~/.gtkrc-2.0
-	*	1709449666	0
-	"	1	0
-
-> ~/diff
-	*	1709449647	0
-	"	192	0
-	.	34	0
-	+	1	0
-	+	8	0
-	+	12	0
-	+	13	0
-	+	21	0
-	+	30	0
-	+	32	0
-	+	34	0
-
-> ~/packages
-	*	1709449527	0
-	"	1	0
-	.	43	0
-	+	1	0
-	+	3	0
-	+	6	0
-	+	10	0
-	+	11	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	14	0
-	+	15	0
-	+	19	0
-	+	25	0
-	+	24	0
-	+	30	0
-	+	27	0
-	+	35	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	42	0
-	+	43	0
-
-> /var/log/Xorg.0.log
-	*	1709446962	0
-	"	490	0
-
-> /etc/X11/xorg.conf.d/20-amdgpu.conf
-	*	1709446757	0
-	"	5	9
-	.	1	0
-	+	1	0
-
-> /etc/pacman.
-	*	1709441058	0
-	"	1	0
-
-> /etc/makepkg.conf
-	*	1709441050	0
-	"	21	0
-	^	177	25
-	.	18	0
-	+	12	0
-	+	177	24
-	+	172	0
-	+	47	15
-	+	103	0
-	+	18	0
-
-> ~/.xdg/config/tmux/tmux.conf
-	*	1709439006	0
-	"	16	43
-	^	60	0
-	.	19	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	84	0
-	+	9	25
-	+	10	25
-	+	12	24
-	+	13	24
-	+	14	24
-	+	15	24
-	+	84	0
-	+	12	0
-	+	10	26
-	+	9	10
-	+	10	0
-	+	11	19
-	+	4	0
-	+	6	0
-	+	11	28
-	+	22	0
-	+	16	0
-	+	81	26
-	+	22	1
-	+	23	0
-	+	26	0
-	+	28	0
-	+	23	0
-	+	22	0
-	+	19	0
-	+	64	0
-	+	21	0
-	+	29	0
-	+	69	0
-	+	65	0
-	+	69	0
-	+	81	47
-	+	69	0
-	+	65	0
-	+	69	0
-	+	65	0
-	+	69	0
-	+	65	0
-	+	69	0
-	+	65	33
-	+	69	0
-	+	82	0
-	+	83	0
-	+	69	0
-	+	80	0
-	+	69	0
-	+	66	0
-	+	69	0
-	+	70	0
-	+	71	0
-	+	73	0
-	+	65	32
-	+	64	0
-	+	65	0
-	+	69	0
-	+	66	0
-	+	19	0
-	+	21	0
-	+	65	32
-	+	21	0
-	+	65	32
-	+	7	14
-	+	65	0
-	+	64	0
-	+	21	0
-	+	61	0
-	+	64	0
-	+	30	0
-	+	20	0
-	+	64	0
-	+	80	0
-	+	64	32
-	+	31	0
-	+	62	0
-	+	80	0
-	+	80	61
-	+	62	0
-	+	80	0
-	+	79	0
-	+	31	0
-	+	33	0
-	+	35	0
-	+	37	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	43	0
-	+	46	0
-	+	48	0
-	+	50	0
-	+	52	0
-	+	54	0
-	+	57	0
-	+	60	0
-	+	16	0
-	+	19	0
-
-> ~/binds.conf
-	*	1709436201	0
-	"	1	0
-
-> /usr/local/share/vim/vim91/doc/map.txt
-	*	1709422047	0
-	"	145	28
-
-> /etc/gtk-2.0/.gtkrc
-	*	1709399176	0
-	"	6	21
-
-> ~/.xdg/config/dotfiles/bash/.bashrc
-	*	1709350927	0
-	"	18	0
-	^	18	32
-	.	18	31
-	+	18	31
-
-> ~/.xdg/config/dotfiles/bash/bash.bashrc
-	*	1709350829	0
-	"	26	0
-
-> ~/.xdg/config/dotfiles/bash/.bash_profile
-	*	1709350743	0
-	"	4	0
-
-> /etc/gtk-3.0/im-multipress.conf
-	*	1709348500	0
-	"	1	0
-
-> /etc/gtk-2.0/im-multipress.conf
-	*	1709348491	0
-	"	19	0
-
-> /usr/local/bin/materia
-	*	1709318065	0
-	"	333	9
-	^	387	10
-	.	387	10
-	+	19	0
-	+	60	0
-	+	314	19
-	+	302	22
-	+	384	11
-	+	386	87
-	+	388	0
-	+	386	61
-	+	1	0
-	+	387	10
-
-> ~/.xdg/config/tmux/tmux-nerd-font-window-name.yml
-	*	1709191387	0
-	"	10	9
-	^	10	16
-	.	10	0
-	+	1	0
-	+	9	0
-	+	8	11
-	+	9	4
-	+	10	0
-
-> ~/.xdg/config/tmux/plugins/tmux-nerd-font-window-name/tmux-nerd-font-window-name.tmux
-	*	1709191186	0
-	"	4	95
-
-> ~/.xdg/config/tmux/plugins/tpm/CHANGELOG.md
-	*	1709191026	0
-	"	86	0
-
-> ~/.xdg/config/tmux/plugins/tpm/tpm
-	*	1709188231	0
-	"	30	0
-
-> ~/.xdg/config/waybar/config_vertical
-	*	1709183684	0
-	"	53	31
-	^	53	32
-	.	53	31
-	+	14	55
-	+	53	31
-
-> ~/.xdg/config/waybar/vertical_waybar
-	*	1709183161	0
-	"	5	0
-	^	5	0
-	.	5	0
-	+	4	123
-	+	5	0
-
-> ~/.xdg/config/waybar/style_vertical.css
-	*	1709182989	0
-	"	7	20
-	^	7	21
-	.	7	20
-	+	39	16
-	+	40	19
-	+	28	15
-	+	29	21
-	+	28	18
-	+	29	22
-	+	28	18
-	+	29	19
-	+	28	18
-	+	29	20
-	+	27	23
-	+	31	20
-	+	17	16
-	+	18	19
-	+	17	16
-	+	18	19
-	+	7	20
-
-> /usr/local/share/vim/vim91/doc/help.txt
-	*	1709178579	0
-	"	1	0
-
-> ~/jetbrains_charset
-	*	1709153022	0
-	"	66	0
-	^	77	0
-	.	78	0
-	+	39	105
-	+	31	15
-	+	35	0
-	+	39	93
-	+	39	111
-	+	39	123
-	+	40	11
-	+	40	51
-	+	30	0
-	+	40	60
-	+	40	62
-	+	40	84
-	+	30	0
-	+	40	78
-	+	40	84
-	+	40	86
-	+	40	96
-	+	34	0
-	+	40	105
-	+	40	96
-	+	40	51
-	+	40	53
-	+	40	117
-	+	35	0
-	+	36	0
-	+	40	117
-	+	40	0
-	+	40	113
-	+	41	0
-	+	42	0
-	+	29	0
-	+	30	18
-	+	34	9
-	+	35	0
-	+	31	3
-	+	35	0
-	+	30	15
-	+	31	15
-	+	31	17
-	+	32	0
-	+	30	0
-	+	33	0
-	+	40	30
-	+	31	23
-	+	40	30
-	+	51	0
-	+	50	0
-	+	50	18
-	+	50	0
-	+	49	0
-	+	48	0
-	+	47	9
-	+	46	21
-	+	45	3
-	+	46	0
-	+	43	9
-	+	44	9
-	+	45	0
-	+	52	15
-	+	52	27
-	+	53	3
-	+	54	15
-	+	55	15
-	+	56	69
-	+	57	54
-	+	58	27
-	+	59	3
-	+	60	27
-	+	61	15
-	+	62	21
-	+	63	11
-	+	64	25
-	+	65	0
-	+	66	102
-	+	65	56
-	+	66	0
-	+	65	62
-	+	66	0
-	+	65	6
-	+	66	48
-	+	67	0
-	+	68	7
-	+	70	0
-	+	69	0
-	+	70	4
-	+	71	56
-	+	67	0
-	+	71	4
-	+	72	4
-	+	73	4
-	+	74	4
-	+	76	0
-	+	78	0
-	+	74	0
-	+	75	0
-	+	76	74
-	+	77	0
-	+	76	0
-	+	78	0
-
-> ~/a
-	*	1709090317	0
-	"	9	25
-	^	9	26
-	.	9	25
-	+	21	31
-	+	22	0
-	+	31	0
-	+	37	0
-	+	51	0
-	+	53	0
-	+	61	0
-	+	67	0
-	+	69	0
-	+	77	0
-	+	81	0
-	+	85	0
-	+	95	0
-	+	96	0
-	+	95	0
-	+	1	11
-	+	14	10
-	+	9	24
-	+	6	9
-	+	7	16
-	+	9	24
-	+	7	29
-	+	9	24
-	+	1	0
-	+	9	25
-
-> ~/Documents/sources/sources
-	*	1709086664	0
-	"	9	0
-	.	9	0
-	+	1	8
-	+	2	55
-	+	1	9
-	+	2	18
-	+	1	57
-	+	2	57
-	+	3	0
-	+	4	0
-	+	5	31
-	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-
-> /etc/passwd
-	*	1709080749	0
-	"	24	0
-
-> /etc/group
-	*	1709080422	0
-	"	65	0
-
-> /etc/group-
-	*	1709080399	0
-	"	51	0
-
-> /etc/group_
-	*	1709080385	0
-	"	1	0
-
-> ~/homebackup/home/asbel/data/__asbel__/__IMPORTANT__/britel/Icons class - material library - Dart API_files/icon
-	*	1709058023	0
-	"	11	0
-
-> ~/project/test.cpp
-	*	1709053856	0
-	"	45	4
-	^	43	0
-	.	43	0
-	+	1	19
-	+	17	11
-	+	18	25
-	+	19	12
-	+	2	0
-	+	22	1
-	+	49	1
-	+	21	0
-	+	40	0
-	+	42	7
-	+	23	8
-	+	41	16
-	+	42	3
-	+	24	0
-	+	25	0
-	+	24	0
-	+	44	4
-	+	50	0
-	+	51	50
-	+	52	3
-	+	16	0
-	+	6	12
-	+	9	7
-	+	12	2
-	+	14	6
-	+	11	19
-	+	9	10
-	+	7	14
-	+	8	14
-	+	9	16
-	+	10	15
-	+	11	24
-	+	13	0
-	+	15	19
-	+	2	0
-	+	5	0
-	+	4	17
-	+	47	0
-	+	45	3
-	+	44	0
-	+	43	0
-
-> ~/.packaging/others/chromium/PKGBUILD
-	*	1709023412	0
-	"	28	49
-	.	27	10
-	+	27	10
-
-> ~/.packaging/others/chromium/fetch-chromium-release
-	*	1709023289	0
-	"	25	55
-	^	25	56
-	.	25	56
-	+	25	56
-
-> ~/depot_tools/vpython3
-	*	1709021851	0
-	"	54	3
-
-> ~/.packaging/.cache/zsh-5.9/Src/init.c
-	*	1708985682	0
-	"	108	0
-
-> ~/.xdg/config/waybar/config/config
-	*	1708984147	0
-	"	120	0
-
-> ~/.packaging/.cache/zsh-5.9/Src/Modules/zftp.c
-	*	1708980537	0
-	"	1	0
-
-> ~/.packaging/.cache/zsh-5.9/Src/Modules/newuser.c
-	*	1708979948	0
-	"	107	0
-
-> ~/.packaging/.cache/zsh-5.9/Src/Modules/mathfunc.c
-	*	1708979926	0
-	"	5	0
-
-> /usr/include/wofi-1/config.h
-	*	1708961203	0
-	"	33	0
-
-> /usr/share/sddm/themes/sugar-light/theme.conf
-	*	1708929036	0
-	"	6	16
-	^	6	17
-	.	6	16
-	+	6	16
-
-> ~/.xdg/config/dotfiles/.vim/pack/vim-wayland-clipboard/start/vim-wayland-clipboard/plugin/wayland_clipboard.vim
-	*	1708906501	0
-	"	6	0

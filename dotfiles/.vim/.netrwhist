@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/usr/include/wofi-1'
+let g:netrw_dirhist_8='/home/asbel/.xdg/config/dotfiles/hyprlandThemes/summer-day-and-night/hypr'
 let g:netrw_dirhist_7='/home/asbel/.xdg/config/.oh-my-zsh'
 let g:netrw_dirhist_6='/home/asbel/.xdg/config'
 let g:netrw_dirhist_5='/home/asbel/.xdg'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_3='/home/asbel/.xdg'
 let g:netrw_dirhist_2='/home/asbel/.xdg/local'
 let g:netrw_dirhist_1='/home/asbel/.xdg'
 let g:netrw_dirhist_0='/home/asbel/.xdg/local'
-let g:netrw_dirhist_9='/home/asbel/.xdg'
-let g:netrw_dirhist_8='/home/asbel/.xdg/config'
