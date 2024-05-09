@@ -1,4 +1,4 @@
-#files: 999	version: 5.9
+#files: 1004	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -99,8 +99,6 @@ _comps=(
 'bindkey' '_bindkey'
 'bison' '_bison'
 'bitcoin-cli' '_bitcoin-cli'
-'black' '_black'
-'blackd' '_blackd'
 'bmake' '_make'
 'bogofilter' '_bogofilter'
 'bogotune' '_bogofilter'
@@ -824,6 +822,7 @@ _comps=(
 'ltrace' '_ltrace'
 'lua' '_lua'
 'luarocks' '_luarocks'
+'luarocks-admin' '_luarocks-admin'
 'lunchy' '_lunchy'
 'lynx' '_lynx'
 'lz4' '_lz4'
@@ -1484,6 +1483,11 @@ _comps=(
 'traceroute' '_hosts'
 'transmission-remote' '_transmission'
 'trap' '_trap'
+'trash' '_trash'
+'trash-empty' '_trash-empty'
+'trash-list' '_trash-list'
+'trash-put' '_trash-put'
+'trash-restore' '_trash-restore'
 'tree' '_tree'
 'trial' '_twisted'
 'trove' '_openstack'
@@ -1923,27 +1927,27 @@ bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
 autoload -Uz _afew _android _archinstallscripts _archlinux-java _artisan \
-            _atach _avdmanager _bazel _bitcoin-cli _black \
-            _blackd _bootctl _bower _btm _bundle \
-            _busctl _bwrap _cap _cargo _cask \
-            _ccache _cf _choc _chromium _clang-check \
-            _clang-format _clang-tidy _cmake _coffee _conan \
-            _concourse _console _coredumpctl _cppcheck _ctr \
-            _curl _dad _dart _devtools _dget \
-            _dhcpcd _diana _direnv _docker _docpad \
-            _dolphin _drush _ecdsautil _emacs _emacsclient \
-            _emulator _envdir _exportfs _eza _fab \
-            _fail2ban-client _fd _ffind _flatpak _fleetctl \
-            _flutter _fvm _fwupdmgr _gas _gh \
-            _ghc _gist _git-flow _git-pulls _git-revise \
-            _git-wtf _glances _glow _golang _google \
-            _gpgconf _grpcurl _gtk-launch _hello _hg \
-            _hledger _homestead _hostnamectl _httpie _hyprctl \
-            _hyprpm _hyprshade _ibus _img2sixel _include-what-you-use \
-            _inxi _jmeter _jmeter-plugins _jonas _journalctl \
-            _jrnl _just _kak _kernel-install _kitchen \
-            _kitty _knife _konsole _language_codes _lf \
-            _libinput _lilypond _localectl _loginctl _lsd \
+            _atach _avdmanager _bazel _bitcoin-cli _bootctl \
+            _bower _btm _bundle _busctl _bwrap \
+            _cap _cargo _cask _ccache _cf \
+            _choc _chromium _clang-check _clang-format _clang-tidy \
+            _cmake _coffee _conan _concourse _console \
+            _coredumpctl _cppcheck _ctr _curl _dad \
+            _dart _devtools _dget _dhcpcd _diana \
+            _direnv _docker _docpad _dolphin _drush \
+            _ecdsautil _emacs _emacsclient _emulator _envdir \
+            _exportfs _eza _fab _fail2ban-client _fd \
+            _ffind _flatpak _fleetctl _flutter _fvm \
+            _fwupdmgr _gas _gh _ghc _gist \
+            _git-flow _git-pulls _git-revise _git-wtf _glances \
+            _glow _golang _google _gpgconf _grpcurl \
+            _gtk-launch _hello _hg _hledger _homestead \
+            _hostnamectl _httpie _hyprctl _hyprpm _hyprshade \
+            _ibus _img2sixel _include-what-you-use _inxi _jmeter \
+            _jmeter-plugins _jonas _journalctl _jrnl _just \
+            _kak _kernel-install _kitchen _kitty _knife \
+            _konsole _language_codes _lf _libinput _lilypond \
+            _localectl _loginctl _lsd _luarocks _luarocks-admin \
             _lunchy _machinectl _mako _makoctl _mc \
             _meson _middleman _mina _mix _mkcert \
             _mkinitcpio _modprobed-db _mpv _mssh _mussh \
@@ -1964,7 +1968,8 @@ autoload -Uz _afew _android _archinstallscripts _archlinux-java _artisan \
             _swaylock _systemctl _systemd _systemd-analyze _systemd-delta \
             _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles \
             _teamocil _thor _timedatectl _tldr _tmuxinator \
-            _tox _tsc _ts-node _udevadm _udiskie \
+            _tox _trash _trash-empty _trash-list _trash-put \
+            _trash-restore _tsc _ts-node _udevadm _udiskie \
             _udiskie-canonical_paths _udiskie-mount _udiskie-umount _udisks2 _udisksctl \
             _ufw _vifm _virtualbox _vnstat _wemux \
             _wg-quick _wl-copy _wlogout _wl-paste _wpctl \

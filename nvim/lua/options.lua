@@ -20,12 +20,12 @@ vim.opt.relativenumber = true
 vim.opt.showcmd = true
 vim.opt.cmdheight = 1
 vim.opt.syntax = "enable"
-vim.opt.guifont = "JetBrainsMonoNL NFM SemiBold:h18"
 vim.opt.termguicolors = true
 vim.opt.laststatus = 10
 vim.opt.showmode = true
 vim.opt.listchars = "tab:<->,trail:."
 vim.opt.wrap = false
+vim.opt.wrapmargin = 2
 
 -- Behavior
 vim.opt.splitbelow = true
@@ -60,14 +60,26 @@ vim.opt.writebackup = true
 vim.opt.backupdir = "/tmp"
 vim.opt.backspace = "indent,eol,start"
 
-
 -- Searching
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
-
+-- Neovide
+if vim.g.neovide then
+    vim.opt.guifont = "JetBrainsMonoNL NFM SemiBold:h18"
+    vim.g.neovide_confirm_quit = true
+    vim.g.neovide_fullscreen = true
+    vim.g.neovide_cursor_animate_command_line = false
+    vim.g.neovide_theme = "dark"
+    vim.g.neovide_refresh_rate = 60
+    vim.g.neovide_refresh_rate_idle = 1
+    vim.g.neovide_no_idle = true
+    vim.g.neovide_fullscreen = true
+    vim.g.neovide_profiler = false
+end
+-- vim.g.neovide_cursor_trail_size = 1.8
 
 -- try
 --     set undofile

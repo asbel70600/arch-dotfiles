@@ -8,14 +8,17 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		MY_KEYMAPS.OnLSPAttach(opts)
 	end,
 })
+
 vim.api.nvim_create_autocmd("CmdlineEnter", { command = [[set hlsearch]] })
 vim.api.nvim_create_autocmd("CmdlineLeave", { command = [[set nohlsearch]] })
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-	pattern = "*",
-	callback = function(args)
-		require("conform").format({ bufnr = args.buf })
-	end,
+vim.api.nvim_create_autocmd("BufEnter", {
+  nested = true,
+  callback = function()
+    if #vim.api.nvim_list_wins() == 1 and require("nvim-tree.utils").is_nvim_tree_buf() then
+      vim.cmd "e dummie"
+    end
+  end
 })
 
 -- vim.api.nvim_create_autocmd("WinEnter",{
@@ -32,3 +35,11 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 --         end
 --     end
 -- })
+
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+-- 	pattern = "*",
+-- 	callback = function(args)
+-- 		require("conform").format({ bufnr = args.buf })
+-- 	end,
+-- })
+

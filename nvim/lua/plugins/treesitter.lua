@@ -29,7 +29,7 @@ MY_PLUGINS_KEYMAPS.treesitterTextObjectKeymaps = {
 return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-        ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "luadoc", "cpp"},
         sync_install = true,
         auto_install = true,
         indent = {

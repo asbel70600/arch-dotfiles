@@ -11,19 +11,39 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0/\<mainMod\>
+~MSle0~/zsh
 
 # Last Substitute Search Pattern:
-~MSle0~&\(\~\/\)\?\.config\/
+~MSle0&\(\~\/\)\?\.config\/
 
 # Last Substitute String:
 $\$XDG_CONFIG_HOME
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714526302,,"q"
+|2,0,1715011498,,"q"
 :bd
-|2,0,1714526301,,"bd"
+|2,0,1714798741,,"bd"
+:lua vim.keymaps.set()
+|2,0,1714798739,,"lua vim.keymaps.set()"
+:lua vim.keymaps
+|2,0,1714798730,,"lua vim.keymaps"
+:vim../
+|2,0,1714798724,,"vim../"
+:h lua
+|2,0,1714798653,,"h lua"
+:lua vim.
+|2,0,1714798449,,"lua vim."
+:lua vim=
+|2,0,1714798442,,"lua vim="
+:lua =vim
+|2,0,1714798437,,"lua =vim"
+:lua vim
+|2,0,1714798433,,"lua vim"
+:lua vim.keymap.set("n", "<C-A>", "<cmd>echo helloman<cr>")
+|2,0,1714798421,,"lua vim.keymap.set(\"n\", \"<C-A>\", \"<cmd>echo helloman<cr>\")"
+:lua vim.keymaps.set("n", "<C-A>", "<cmd>echo helloman<cr>")
+|2,0,1714798409,,"lua vim.keymaps.set(\"n\", \"<C-A>\", \"<cmd>echo helloman<cr>\")"
 :wq
 |2,0,1713679297,,"wq"
 :w
@@ -200,28 +220,12 @@ $\$XDG_CONFIG_HOME
 |2,0,1709421421,,"e binds.conf"
 :h mappiign
 |2,0,1709421936,,"h mappiign"
-:e bash/.bashrc
-|2,0,1709350867,,"e bash/.bashrc"
-:e bash/bash.bashrc
-|2,0,1709350826,,"e bash/bash.bashrc"
-:set syntax=jsonc
-|2,0,1709266989,,"set syntax=jsonc"
-:s
-|2,0,1709266936,,"s"
-:set syntax=json5
-|2,0,1709261533,,"set syntax=json5"
-:json5
-|2,0,1709261526,,"json5"
-:w vertical_config
-|2,0,1709182349,,"w vertical_config"
-:rota
-|2,0,1709182275,,"rota"
-:e .xdg/config/waybar/style.css
-|2,0,1709179216,,"e .xdg/config/waybar/style.css"
-:noremap <Leader>a :w<CR>:!waybar<CR>
-|2,0,1709154613,,"noremap <Leader>a :w<CR>:!waybar<CR>"
 
 # Search String History (newest to oldest):
+?/bashrc
+|2,1,1715011493,47,"bashrc"
+?/zsh
+|2,1,1715011413,47,"zsh"
 ? @$
 |2,1,1712889902,,"@$"
 ? ^$
@@ -418,10 +422,6 @@ $\$XDG_CONFIG_HOME
 |2,1,1708645046,47,"Escape"
 ?/Q
 |2,1,1708634017,47,"Q"
-?/error
-|2,1,1708326441,47,"error"
-?/erro
-|2,1,1708321666,47,"erro"
 
 # Expression History (newest to oldest):
 
@@ -499,36 +499,218 @@ $\$XDG_CONFIG_HOME
 |3,1,36,0,1,0,1713426665,"peer"
 
 # File marks:
-'0  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,48,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
-'1  3  0  /home/home/eso
-|4,49,3,0,1714265746,"/home/home/eso"
-'2  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,50,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
-'3  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,51,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
-'4  99  0  /etc/pacman.conf
-|4,52,99,0,1713679806,"/etc/pacman.conf"
-'5  25  0  /home/home/.xdg/config/dotfiles/hyprlandThemes/of_mine/hypr/hyprland.conf
-|4,53,25,0,1713679297,"/home/home/.xdg/config/dotfiles/hyprlandThemes/of_mine/hypr/hyprland.conf"
-'6  7  0  ~/.directory
-|4,54,7,0,1713600801,"~/.directory"
-'7  54  12  /home/home/.xdg/config/dotfiles/zsh/.zshrc
-|4,55,54,12,1713597260,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
-'8  117  68  /var/lib/postgres/data/pg_hba.conf
-|4,56,117,68,1713426668,"/var/lib/postgres/data/pg_hba.conf"
-'9  1  0  ~/NERD_tree_win_1
-|4,57,1,0,1713426404,"~/NERD_tree_win_1"
+'0  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
+|4,48,1,0,1715011498,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
+'1  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
+|4,49,1,0,1715011428,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
+'2  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,50,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+'3  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,51,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+'4  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,52,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+'5  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,53,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+'6  3  0  /home/home/eso
+|4,54,3,0,1714265746,"/home/home/eso"
+'7  3  0  /home/home/eso
+|4,55,3,0,1714265746,"/home/home/eso"
+'8  3  0  /home/home/eso
+|4,56,3,0,1714265746,"/home/home/eso"
+'9  3  0  /home/home/eso
+|4,57,3,0,1714265746,"/home/home/eso"
 
 # Jumplist (newest first):
+-'  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
+|4,39,1,0,1715011498,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
+-'  191  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
+|4,39,191,0,1715011488,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
+-'  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
+|4,39,1,0,1715011428,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
 -'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
 |4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
+|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
 -'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
 |4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
 -'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
 |4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
 -'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
 |4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
+|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
+-'  3  0  /home/home/eso
+|4,39,3,0,1714265746,"/home/home/eso"
 -'  3  0  /home/home/eso
 |4,39,3,0,1714265746,"/home/home/eso"
 -'  3  0  /home/home/eso
@@ -539,188 +721,20 @@ $\$XDG_CONFIG_HOME
 |4,39,3,0,1714265746,"/home/home/eso"
 -'  1  0  /home/home/eso
 |4,39,1,0,1714265744,"/home/home/eso"
--'  1  0  /home/home/eso
-|4,39,1,0,1714265744,"/home/home/eso"
--'  1  0  /home/home/eso
-|4,39,1,0,1714265744,"/home/home/eso"
--'  1  0  /home/home/eso
-|4,39,1,0,1714265744,"/home/home/eso"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  1  0  /usr/local/bin/uclv_proxy_ovpn
-|4,39,1,0,1714158386,"/usr/local/bin/uclv_proxy_ovpn"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  46  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,46,0,1713861915,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  1  0  /home/home/Downloads/scriptella-1.2/bin/scriptella.sh
-|4,39,1,0,1713861713,"/home/home/Downloads/scriptella-1.2/bin/scriptella.sh"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  99  0  /etc/pacman.conf
-|4,39,99,0,1713679806,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
--'  1  0  /etc/pacman.conf
-|4,39,1,0,1713679791,"/etc/pacman.conf"
 
 # History of marks within files (newest to oldest):
+
+> /home/home/Documents/sources/documentations/devdocs/rvm-install
+	*	1715011494	0
+	"	1	0
+
+> /usr/local/share/vim/vim91/doc/if_lua.txt
+	*	1714798739	0
+	"	124	28
+
+> /usr/local/share/vim/vim91/doc/usr_02.txt
+	*	1714798575	0
+	"	95	0
 
 > /home/home/Documents/nvim/lua/_headers_plugins.lua
 	*	1714526299	0
@@ -2145,38 +2159,3 @@ $\$XDG_CONFIG_HOME
 	+	70	45
 	+	79	51
 	+	70	46
-
-> ~/.xdg/config/vifm/vifmrc
-	*	1709681652	0
-	"	566	0
-	^	566	0
-	.	566	0
-	+	567	45
-	+	566	0
-
-> ~/.xdg/config/ranger/rifle.conf
-	*	1709516018	0
-	"	205	0
-	^	89	31
-	.	235	0
-	+	181	61
-	+	131	0
-	+	122	0
-	+	75	0
-	+	57	0
-	+	88	0
-	+	89	30
-	+	153	0
-	+	144	0
-	+	181	11
-	+	237	0
-	+	235	0
-
-> ~/.packaging/others/oculante/.cargo/config.toml
-	*	1709506548	0
-	"	4	0
-	^	5	9
-	.	4	0
-	+	4	0
-	+	5	0
-	+	4	0

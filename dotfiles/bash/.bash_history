@@ -6899,3 +6899,7 @@ declare -h
 declare --help
 clear
 exit
+rvm
+type rvm
+:q
+exit

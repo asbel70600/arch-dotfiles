@@ -12,9 +12,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
 require("lazy").setup("plugins", { change_detection = { enabled = false } })
 
-require("plugins")
-require("options")
 require("mappings")
--- require("autocmds")
+require("options")
+require("plugins")
+-- require("autocmds
+-- require("telescope").load_extension("fzf")
