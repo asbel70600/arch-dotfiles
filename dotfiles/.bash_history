@@ -104,3 +104,10 @@ faillock --user asbel --reset
 reboot
 vim /var/lib/postgres/data/pg_hba.conf 
 exit
+faillock --user asbel --reset
+passwd --unlock asbel
+usermod -U asbel 
+passwd --unlock asbel
+usermod -U asbel 
+faillock --user asbel --reset
+exit

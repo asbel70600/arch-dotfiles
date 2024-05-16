@@ -11,19 +11,91 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/zsh
+~MSle0~/flags
 
 # Last Substitute Search Pattern:
-~MSle0&\(\~\/\)\?\.config\/
+~MSle0&local
 
 # Last Substitute String:
-$\$XDG_CONFIG_HOME
+$
 
 # Command Line History (newest to oldest):
+:qa!
+|2,0,1715752840,,"qa!"
 :q
-|2,0,1715011498,,"q"
+|2,0,1715752835,,"q"
+:w
+|2,0,1715744497,,"w"
+:h netrw
+|2,0,1715451279,,"h netrw"
+:windo q
+|2,0,1715397829,,"windo q"
+:windo up
+|2,0,1715397385,,"windo up"
+:copen
+|2,0,1715388369,,"copen"
+:bn
+|2,0,1715388366,,"bn"
 :bd
-|2,0,1714798741,,"bd"
+|2,0,1715388364,,"bd"
+:vimgrep/panel/gj /usr/local/share/vim/vim91/doc/**
+|2,0,1715388347,,"vimgrep/panel/gj /usr/local/share/vim/vim91/doc/**"
+:vimgrep/pannel/gj /usr/local/share/vim/vim91/doc/**
+|2,0,1715388341,,"vimgrep/pannel/gj /usr/local/share/vim/vim91/doc/**"
+:helpgrep panel
+|2,0,1715388251,,"helpgrep panel"
+:noremap [q :cprev<cr>
+|2,0,1715388246,,"noremap [q :cprev<cr>"
+:noremap ]q :cnext<cr>
+|2,0,1715388242,,"noremap ]q :cnext<cr>"
+:noremap
+|2,0,1715388238,,"noremap"
+:helpgrep pannel
+|2,0,1715388208,,"helpgrep pannel"
+:helpgrep
+|2,0,1715388201,,"helpgrep"
+:next
+|2,0,1715388195,,"next"
+:NERDTreeClose
+|2,0,1715388137,,"NERDTreeClose"
+:NERDTree
+|2,0,1715388130,,"NERDTree"
+:windo
+|2,0,1715388105,,"windo"
+:E
+|2,0,1715386328,,"E"
+:cdo s/local/eso/gc
+|2,0,1715386249,,"cdo s/local/eso/gc"
+:vimgrep/local/g ./**
+|2,0,1715386223,,"vimgrep/local/g ./**"
+:vimgrep local/g ./**
+|2,0,1715386212,,"vimgrep local/g ./**"
+:cd .xd
+|2,0,1715386163,,"cd .xd"
+:n
+|2,0,1715386107,,"n"
+:cdo normal ddieso<ESC>
+|2,0,1715385962,,"cdo normal ddieso<ESC>"
+:cNext
+|2,0,1715385442,,"cNext"
+:vimgrep/local/gjf ./**
+|2,0,1715385412,,"vimgrep/local/gjf ./**"
+:lua vim.
+|2,0,1715385385,,"lua vim."
+:h quickfix
+|2,0,1715384472,,"h quickfix"
+:nvim
+|2,0,1715385054,,"nvim"
+:Cnext
+|2,0,1715384731,,"Cnext"
+:vimgrep/local/g
+|2,0,1715384709,,"vimgrep/local/g"
+:h vimgrep
+|2,0,1715385078,,"h vimgrep"
+:vimgrep
+|2,0,1715384594,,"vimgrep"
+:grep eso
+|2,0,1715384590,,"grep eso"
 :lua vim.keymaps.set()
 |2,0,1714798739,,"lua vim.keymaps.set()"
 :lua vim.keymaps
@@ -32,8 +104,6 @@ $\$XDG_CONFIG_HOME
 |2,0,1714798724,,"vim../"
 :h lua
 |2,0,1714798653,,"h lua"
-:lua vim.
-|2,0,1714798449,,"lua vim."
 :lua vim=
 |2,0,1714798442,,"lua vim="
 :lua =vim
@@ -46,10 +116,6 @@ $\$XDG_CONFIG_HOME
 |2,0,1714798409,,"lua vim.keymaps.set(\"n\", \"<C-A>\", \"<cmd>echo helloman<cr>\")"
 :wq
 |2,0,1713679297,,"wq"
-:w
-|2,0,1713679296,,"w"
-:bn
-|2,0,1712888255,,"bn"
 :Ex
 |2,0,1712889902,,"Ex"
 :bp
@@ -94,8 +160,6 @@ $\$XDG_CONFIG_HOME
 |2,0,1712329975,,"%s/\\s\\+/:/g"
 :e hyprland.conf
 |2,0,1712069563,,"e hyprland.conf"
-:qa!
-|2,0,1711861392,,"qa!"
 :term
 |2,0,1711425566,,"term"
 :.,.+12.12-2
@@ -142,8 +206,6 @@ $\$XDG_CONFIG_HOME
 |2,0,1709788532,,"buffers"
 :%s/\.\/src/\/home\/asbel\/.xdg\/config\/eww\/src
 |2,0,1709758813,,"%s/\\.\\/src/\\/home\\/asbel\\/.xdg\\/config\\/eww\\/src"
-:NERDTree
-|2,0,1709752418,,"NERDTree"
 :PlugInstall
 |2,0,1709752407,,"PlugInstall"
 :registers
@@ -158,78 +220,28 @@ $\$XDG_CONFIG_HOME
 |2,0,1709741875,,"Telescope find_files"
 :Texplore
 |2,0,1709741840,,"Texplore"
-:tele
-|2,0,1709741823,,"tele"
-:AirlineTheme lucius
-|2,0,1709740502,,"AirlineTheme lucius"
-:AirlineTheme ayu_dark
-|2,0,1709740486,,"AirlineTheme ayu_dark"
-:AirlineTheme atomic
-|2,0,1709740477,,"AirlineTheme atomic"
-:AirlineTheme ayu_mirage
-|2,0,1709740434,,"AirlineTheme ayu_mirage"
-:qa
-|2,0,1709740308,,"qa"
-:colorscheme 
-|2,0,1709740216,,"colorscheme "
-:colorscheme ayu_dark
-|2,0,1709740114,,"colorscheme ayu_dark"
-:e .xdg/config/hypr/mappings.conf
-|2,0,1709700210,,"e .xdg/config/hypr/mappings.conf"
-:c
-|2,0,1709696227,,"c"
-:m-2
-|2,0,1709681652,,"m-2"
-:%s/totla/total/g
-|2,0,1709670565,,"%s/totla/total/g"
-:e .xdg/config/waybar/config
-|2,0,1709489960,,"e .xdg/config/waybar/config"
-:h mapping
-|2,0,1709421989,,"h mapping"
-:jkjkjkasdfjjkjkjkjk
-|2,0,1709436615,,"jkjkjkasdfjjkjkjkjk"
-:e .xdg/config/dotfiles/environment
-|2,0,1709436513,,"e .xdg/config/dotfiles/environment"
-:bd!
-|2,0,1709436204,,"bd!"
-:h omap
-|2,0,1709436063,,"h omap"
-:nmap
-|2,0,1709435937,,"nmap"
-:nap
-|2,0,1709435935,,"nap"
-:map
-|2,0,1709435839,,"map"
-:h
-|2,0,1709421874,,"h"
-:noremap <C-B>n :bn
-|2,0,1709421845,,"noremap <C-B>n :bn"
-:source ~/.xdg/config/dotfiles/.vim/mappings.vim
-|2,0,1709421828,,"source ~/.xdg/config/dotfiles/.vim/mappings.vim"
-:source ~/.xdg/config/dotfiles/.vimrc
-|2,0,1709421799,,"source ~/.xdg/config/dotfiles/.vimrc"
-:bdelete
-|2,0,1709421776,,"bdelete"
-:bc
-|2,0,1709421772,,"bc"
-:bufdo
-|2,0,1709421678,,"bufdo"
-:e ~/.xdg/config/dotfiles/.vimrc
-|2,0,1709421455,,"e ~/.xdg/config/dotfiles/.vimrc"
-:e binds.conf
-|2,0,1709421421,,"e binds.conf"
-:h mappiign
-|2,0,1709421936,,"h mappiign"
 
 # Search String History (newest to oldest):
+?/flags
+|2,1,1715750951,47,"flags"
+?/cd
+|2,1,1715744495,47,"cd"
+?/preview
+|2,1,1715451288,47,"preview"
+? @$
+|2,1,1715386328,,"@$"
+? ^$
+|2,1,1715386328,,"^$"
+? local
+|2,1,1715386260,,"local"
+?/nvim
+|2,1,1715384507,47,"nvim"
+??\a
+|2,1,1715384506,63,"\\a"
 ?/bashrc
 |2,1,1715011493,47,"bashrc"
 ?/zsh
 |2,1,1715011413,47,"zsh"
-? @$
-|2,1,1712889902,,"@$"
-? ^$
-|2,1,1712889902,,"^$"
 ?/input
 |2,1,1712889872,47,"input"
 ?/maindisplay
@@ -276,8 +288,6 @@ $\$XDG_CONFIG_HOME
 |2,1,1711682845,47,"config_local"
 ?/flag
 |2,1,1711601151,47,"flag"
-?/flags
-|2,1,1711600542,47,"flags"
 ?/flto
 |2,1,1711567674,47,"flto"
 ?/name = 
@@ -334,8 +344,6 @@ $\$XDG_CONFIG_HOME
 |2,1,1709446890,47,"EDID"
 ?/image
 |2,1,1709437279,47,"image"
-?/preview
-|2,1,1709403193,47,"preview"
 ?/wlan
 |2,1,1709322690,47,"wlan"
 ?/left
@@ -414,14 +422,6 @@ $\$XDG_CONFIG_HOME
 |2,1,1708652140,47,"1"
 ?/ = 1
 |2,1,1708651828,47," = 1"
-?/ = 1;
-|2,1,1708651799,47," = 1;"
-?/Control
-|2,1,1708645100,47,"Control"
-?/Escape
-|2,1,1708645046,47,"Escape"
-?/Q
-|2,1,1708634017,47,"Q"
 
 # Expression History (newest to oldest):
 
@@ -430,43 +430,38 @@ $\$XDG_CONFIG_HOME
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	|
-|3,0,0,0,1,0,1712889906,"|"
-"1	LINE	0
-	    color: @red;
-|3,0,1,1,1,0,1712889064,"    color: @red;"
+"0	LINE	0
+		let g:netrw_preview   = 1
+		let g:netrw_liststyle = 3
+		let g:netrw_winsize   = 30
+|3,0,0,1,3,0,1715451349,"	let g:netrw_preview   = 1","	let g:netrw_liststyle = 3","	let g:netrw_winsize   = 30"
+""1	LINE	0
+	cd /home/home
+|3,1,1,1,1,0,1715744496,"cd /home/home"
 "2	LINE	0
-	    background-color: @bg_blue;
-|3,0,2,1,1,0,1712888272,"    background-color: @bg_blue;"
+	-- delta: 2 lines
+|3,0,2,1,1,0,1715388071,"-- delta: 2 lines"
 "3	LINE	0
-	    background-color: @red
-|3,0,3,1,1,0,1712888163,"    background-color: @red"
+	
+|3,0,3,1,1,0,1715386364,""
 "4	LINE	0
-	::placeholder {
-	    color: @red
-	}
-|3,0,4,1,3,0,1712887966,"::placeholder {","    color: @red","}"
+	require("lazy").setup("plugins", { change_detection = { enabled = false } })
+|3,0,4,1,1,0,1715386361,"require(\"lazy\").setup(\"plugins\", { change_detection = { enabled = false } })"
 "5	LINE	0
-	::placeholder {
-	    color: @red
-	}
-|3,0,5,1,3,0,1712887961,"::placeholder {","    color: @red","}"
-"6	BLOCK	14
-	 pkill wofi || 
-	 pkill wofi || 
-	 pkill wofi || 
-	 pkill wofi || 
-|3,0,6,2,4,14,1712857952," pkill wofi || "," pkill wofi || "," pkill wofi || "," pkill wofi || "
+	        eso<ESC>cd_type = "global", -- Global local or tab
+|3,0,5,1,1,0,1715385962,"        eso<ESC>cd_type = \"global\", -- Global local or tab"
+"6	LINE	0
+	        path = vim.fn.stdpath("data") .. "/workspaces", -- ~/.local/share/nvim/workspaces
+|3,0,6,1,1,0,1715385962,"        path = vim.fn.stdpath(\"data\") .. \"/workspaces\", -- ~/.local/share/nvim/workspaces"
 "7	LINE	0
-	srce eso
-|3,0,7,1,1,0,1712857602,"srce eso"
+	        pre_save = nil, -- a function to call before saving the session
+|3,0,7,1,1,0,1715385962,"        pre_save = nil, -- a function to call before saving the session"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1712857567,""
+	       eso<ESC>--          disallow_prefix_unmatching = false,
+|3,0,8,1,1,0,1715385962,"       eso<ESC>--          disallow_prefix_unmatching = false,"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1712857567,""
+	       eso<ESC>--          disallow_partial_matching = false,
+|3,0,9,1,1,0,1715385962,"       eso<ESC>--          disallow_partial_matching = false,"
 "a	CHAR	0
 	0f D20a 17|gPDj
 |3,0,10,0,1,0,1705524708,"0f D20a 17|gPDj"
@@ -483,250 +478,438 @@ $\$XDG_CONFIG_HOME
 	sefasdfasdfasfasdfkkk
 |3,0,18,0,1,0,1707325330,"sefasdfasdfasfasdfkkk"
 "j	CHAR	0
-	jjdd
-|3,0,19,0,1,0,1708892105,"jjdd"
+	kaqq€ýk€ýk€ýkuuuuuuuuuuuu
+|3,0,19,0,1,0,1715386267,"kaqq€ýk€ýk€ýkuuuuuuuuuuuu"
 "l	CHAR	0
 	
 |3,0,21,0,1,0,1709788979,""
+"q@	CHAR	0
+	[quuuuu
+|3,2,26,0,1,0,1715386139,"[quuuuu"
 "s	CHAR	0
 	€ýa€ýa
 |3,0,28,0,1,0,1704582736,"€ýa€ýa"
 "u	CHAR	0
 	€ýau:€ku€kl€kr€kr \:q:q€ýau:%Q€kb!colu	 -t -s' 'u/ €ýa
 |3,0,30,0,1,0,1705535252,"€ýau:€ku€kl€kr€kr \\:q:q€ýau:%Q€kb!colu	 -t -s' 'u/ €ýa"
-""-	CHAR	0
-	peer
-|3,1,36,0,1,0,1713426665,"peer"
+"-	CHAR	0
+	S
+|3,0,36,0,1,0,1715397840,"S"
 
 # File marks:
-'0  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
-|4,48,1,0,1715011498,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
-'1  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
-|4,49,1,0,1715011428,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
-'2  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,50,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
-'3  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,51,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
-'4  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,52,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
-'5  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,53,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
-'6  3  0  /home/home/eso
-|4,54,3,0,1714265746,"/home/home/eso"
-'7  3  0  /home/home/eso
-|4,55,3,0,1714265746,"/home/home/eso"
-'8  3  0  /home/home/eso
-|4,56,3,0,1714265746,"/home/home/eso"
-'9  3  0  /home/home/eso
-|4,57,3,0,1714265746,"/home/home/eso"
+'0  3  0  /etc/profile.d/my_stuff.sh
+|4,48,3,0,1715752840,"/etc/profile.d/my_stuff.sh"
+'1  48  41  /etc/makepkg.conf
+|4,49,48,41,1715750969,"/etc/makepkg.conf"
+'2  1  0  /usr/share/zsh/site-functions/_mvn
+|4,50,1,0,1715745050,"/usr/share/zsh/site-functions/_mvn"
+'3  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,51,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+'4  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,52,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+'5  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,53,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+'6  1  9  /home/home/.xdg/config/nvim/lua/mappings.lua
+|4,54,1,9,1715447960,"/home/home/.xdg/config/nvim/lua/mappings.lua"
+'7  1  0  /home/home/.xdg/config/nvim/lua/plugins/nvim-cmp.lua
+|4,55,1,0,1715386322,"/home/home/.xdg/config/nvim/lua/plugins/nvim-cmp.lua"
+'8  1  0  /home/home/.xdg/config/nvim/lua/plugins/nvim-cmp.lua
+|4,56,1,0,1715386322,"/home/home/.xdg/config/nvim/lua/plugins/nvim-cmp.lua"
+'9  7  0  /home/home/.xdg/config/nvim/init.lua
+|4,57,7,0,1715385307,"/home/home/.xdg/config/nvim/init.lua"
 
 # Jumplist (newest first):
--'  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
-|4,39,1,0,1715011498,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
--'  191  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
-|4,39,191,0,1715011488,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
--'  1  0  /home/home/Documents/sources/documentations/devdocs/rvm-install
-|4,39,1,0,1715011428,"/home/home/Documents/sources/documentations/devdocs/rvm-install"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  111  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,111,0,1714526301,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_plugins.lua
-|4,39,1,0,1714526296,"/home/home/Documents/nvim/lua/_headers_plugins.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  1  0  /home/home/Documents/nvim/lua/_headers_mappings.lua
-|4,39,1,0,1714526290,"/home/home/Documents/nvim/lua/_headers_mappings.lua"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  3  0  /home/home/eso
-|4,39,3,0,1714265746,"/home/home/eso"
--'  1  0  /home/home/eso
-|4,39,1,0,1714265744,"/home/home/eso"
+-'  3  0  /etc/profile.d/my_stuff.sh
+|4,39,3,0,1715752840,"/etc/profile.d/my_stuff.sh"
+-'  1  0  /etc/profile.d/my_stuff.sh
+|4,39,1,0,1715752828,"/etc/profile.d/my_stuff.sh"
+-'  48  41  /etc/makepkg.conf
+|4,39,48,41,1715750969,"/etc/makepkg.conf"
+-'  48  41  /etc/makepkg.conf
+|4,39,48,41,1715750969,"/etc/makepkg.conf"
+-'  41  24  /etc/makepkg.conf
+|4,39,41,24,1715750953,"/etc/makepkg.conf"
+-'  41  24  /etc/makepkg.conf
+|4,39,41,24,1715750953,"/etc/makepkg.conf"
+-'  35  24  /etc/makepkg.conf
+|4,39,35,24,1715750952,"/etc/makepkg.conf"
+-'  35  24  /etc/makepkg.conf
+|4,39,35,24,1715750952,"/etc/makepkg.conf"
+-'  1  0  /etc/makepkg.conf
+|4,39,1,0,1715750951,"/etc/makepkg.conf"
+-'  1  0  /etc/makepkg.conf
+|4,39,1,0,1715750951,"/etc/makepkg.conf"
+-'  1  0  /usr/share/zsh/site-functions/_mvn
+|4,39,1,0,1715745050,"/usr/share/zsh/site-functions/_mvn"
+-'  1  0  /usr/share/zsh/site-functions/_mvn
+|4,39,1,0,1715745050,"/usr/share/zsh/site-functions/_mvn"
+-'  1  0  /usr/share/zsh/site-functions/_mvn
+|4,39,1,0,1715745050,"/usr/share/zsh/site-functions/_mvn"
+-'  1  0  /usr/share/zsh/site-functions/_mvn
+|4,39,1,0,1715745050,"/usr/share/zsh/site-functions/_mvn"
+-'  617  0  /usr/share/zsh/site-functions/_mvn
+|4,39,617,0,1715744942,"/usr/share/zsh/site-functions/_mvn"
+-'  617  0  /usr/share/zsh/site-functions/_mvn
+|4,39,617,0,1715744942,"/usr/share/zsh/site-functions/_mvn"
+-'  617  0  /usr/share/zsh/site-functions/_mvn
+|4,39,617,0,1715744942,"/usr/share/zsh/site-functions/_mvn"
+-'  617  0  /usr/share/zsh/site-functions/_mvn
+|4,39,617,0,1715744942,"/usr/share/zsh/site-functions/_mvn"
+-'  241  0  /usr/share/zsh/site-functions/_mvn
+|4,39,241,0,1715744922,"/usr/share/zsh/site-functions/_mvn"
+-'  241  0  /usr/share/zsh/site-functions/_mvn
+|4,39,241,0,1715744922,"/usr/share/zsh/site-functions/_mvn"
+-'  241  0  /usr/share/zsh/site-functions/_mvn
+|4,39,241,0,1715744922,"/usr/share/zsh/site-functions/_mvn"
+-'  241  0  /usr/share/zsh/site-functions/_mvn
+|4,39,241,0,1715744922,"/usr/share/zsh/site-functions/_mvn"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  54  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,54,0,1715744498,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  1  0  /home/home/.xdg/config/dotfiles/zsh/.zshrc
+|4,39,1,0,1715744495,"/home/home/.xdg/config/dotfiles/zsh/.zshrc"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  44  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,44,0,1715701027,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  1  0  /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+|4,39,1,0,1715700689,"/home/home/projects/mipime/spring-3.2.5/INSTALL.txt"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
+-'  21  0  /usr/local/share/vim/vim91/ftplugin/c.vim
+|4,39,21,0,1715474635,"/usr/local/share/vim/vim91/ftplugin/c.vim"
 
 # History of marks within files (newest to oldest):
 
-> /home/home/Documents/sources/documentations/devdocs/rvm-install
-	*	1715011494	0
+> /etc/profile.d/my_stuff.sh
+	*	1715752836	0
+	"	3	0
+	^	3	0
+	.	3	0
+	+	3	0
+
+> /etc/makepkg.conf
+	*	1715750961	0
+	"	48	41
+	^	127	2
+	.	128	0
+	+	12	0
+	+	177	24
+	+	172	0
+	+	47	15
+	+	103	0
+	+	18	0
+	+	128	0
+
+> /usr/share/zsh/site-functions/_mvn
+	*	1715745049	0
 	"	1	0
+
+> /home/home/.xdg/config/dotfiles/zsh/.zshrc
+	*	1715744497	0
+	"	54	0
+	.	54	0
+	+	53	40
+	+	54	0
+
+> /home/home/projects/mipime/spring-3.2.5/INSTALL.txt
+	*	1715700947	0
+	"	44	0
+
+> /usr/local/share/vim/vim91/ftplugin/c.vim
+	*	1715474284	0
+	"	21	0
+
+> /home/home/Documents/sources/linux-6.8.2/NERD_tree_win_1
+	*	1715473306	0
+	"	35	0
+	.	1	0
+	+	1	0
+
+> /usr/local/share/vim/vim91/doc/pi_netrw.txt
+	*	1715458280	0
+	"	3181	0
+
+> /home/home/.xdg/config/nvim/lua/mappings.lua
+	*	1715397846	0
+	"	1	9
+	^	8	3
+	.	1	0
+	+	3	0
+	+	15	0
+	+	8	2
+	+	1	0
+
+> /usr/local/share/vim/vim91/doc/gui_w32.txt
+	*	1715397835	0
+	"	437	0
+
+> /home/home/.xdg/config/nvim/init.lua
+	*	1715388360	0
+	"	9	0
+	^	27	2
+	.	14	0
+	+	2	0
+	+	32	21
+	+	27	2
+	+	28	0
+	+	14	0
+
+> /home/home/.xdg/config/dotfiles/.vim/plugged/telescope.nvim/doc/telescope.txt
+	*	1715388256	0
+	"	2473	0
+
+> /home/home/.xdg/config/nvim/NERD_tree_tab_2
+	*	1715388130	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/nvim-cmp.lua
+	*	1715386321	0
+	"	1	0
+	^	27	15
+	.	1	0
+	+	1	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/mason-none_ls.lua
+	*	1715386313	0
+	"	9	8
+	^	11	8
+	.	9	0
+	+	9	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/lspconfig.lua
+	*	1715386312	0
+	"	6	8
+	^	7	16
+	.	6	0
+	+	6	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/mason-lspconfig.lua
+	*	1715386312	0
+	"	10	8
+	^	11	16
+	.	10	0
+	+	10	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/dashboard.lua
+	*	1715386311	0
+	"	7	8
+	^	8	16
+	.	5	0
+	+	5	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/chadtree.lua
+	*	1715386307	0
+	"	3	0
+	^	4	12
+	.	3	0
+	+	3	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/autopairs.lua
+	*	1715386305	0
+	"	9	11
+	^	20	8
+	.	8	0
+	+	8	0
+
+> /home/home/.xdg/config/nvim/lua/options.lua
+	*	1715386303	0
+	"	38	36
+	^	99	8
+	.	38	0
+	+	38	0
+
+> /home/home/.xdg/config/nvim/lua/autocmds.lua
+	*	1715386299	0
+	"	45	15
+	^	46	8
+	.	7	0
+	+	28	0
+	+	7	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/workspaces.lua
+	*	1715386281	0
+	"	6	38
+	^	4	14
+	.	4	0
+	+	5	0
+	+	4	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/luasnip.lua
+	*	1715386142	0
+	"	6	7
+	^	6	12
+	.	5	0
+	+	5	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/neodev.lua
+	*	1715386142	0
+	"	9	42
+	^	11	20
+	.	8	0
+	+	8	0
+
+> /home/home/.xdg/config/nvim/lua/plugins/persistance.lua
+	*	1715386142	0
+	"	8	21
+	^	8	16
+	.	7	0
+	+	7	0
+
+> /usr/local/share/vim/vim91/doc/quickfix.txt
+	*	1715385369	0
+	"	54	67
+
+> /home/home/Documents/sources/documentations/devdocs/rvm-install
+	*	1715385294	0
+	"	1	0
+
+> /usr/local/share/vim/vim91/doc/editing.txt
+	*	1715384701	0
+	"	377	23
 
 > /usr/local/share/vim/vim91/doc/if_lua.txt
 	*	1714798739	0
@@ -781,15 +964,6 @@ $\$XDG_CONFIG_HOME
 	.	6	9
 	+	4	9
 	+	6	9
-
-> /home/home/.xdg/config/dotfiles/zsh/.zshrc
-	*	1713597259	0
-	"	54	12
-	^	54	13
-	.	54	13
-	+	53	40
-	+	55	0
-	+	54	13
 
 > /var/lib/postgres/data/pg_hba.conf
 	*	1713426667	0
@@ -1373,19 +1547,6 @@ $\$XDG_CONFIG_HOME
 	.	33	32
 	+	33	32
 
-> /etc/makepkg.conf
-	*	1711682608	0
-	"	127	0
-	^	127	2
-	.	128	0
-	+	12	0
-	+	177	24
-	+	172	0
-	+	47	15
-	+	103	0
-	+	18	0
-	+	128	0
-
 > /etc/makepkg.conf.pacold
 	*	1711601177	0
 	"	50	0
@@ -1730,432 +1891,3 @@ $\$XDG_CONFIG_HOME
 	+	14	20
 	+	7	0
 	+	14	10
-
-> ~/.viminfo
-	*	1709789214	0
-	"	1	0
-
-> ~/.xdg/config/nvim/init.lua
-	*	1709789201	0
-	"	2	0
-	^	2	18
-	.	3	0
-	+	3	0
-	+	1	15
-	+	2	17
-	+	3	0
-
-> ~/.xdg/config/eww/src/yuck/_variables.yuck
-	*	1709760508	0
-	"	43	1
-	^	43	2
-	.	43	1
-	+	1	36
-	+	4	24
-	+	5	22
-	+	6	14
-	+	30	0
-	+	45	0
-	+	29	0
-	+	43	1
-
-> ~/.xdg/config/eww/eww.yuck
-	*	1709760469	0
-	"	1	10
-	^	1	33
-	.	2	0
-	+	1	0
-	+	1	42
-	+	10	28
-	+	10	2
-	+	10	16
-	+	10	32
-	+	10	43
-	+	10	56
-	+	10	71
-	+	10	96
-	+	10	8
-	+	10	56
-	+	10	8
-	+	10	93
-	+	10	4
-	+	10	52
-	+	10	4
-	+	10	30
-	+	10	23
-	+	10	31
-	+	10	41
-	+	10	54
-	+	10	69
-	+	10	13
-	+	1	11
-	+	10	0
-	+	10	13
-	+	10	91
-	+	10	2
-	+	10	48
-	+	10	2
-	+	10	30
-	+	10	40
-	+	10	53
-	+	10	68
-	+	10	90
-	+	10	0
-	+	10	15
-	+	1	4
-	+	10	0
-	+	1	1
-	+	10	0
-	+	10	12
-	+	10	0
-	+	1	0
-	+	1	17
-	+	8	0
-	+	1	10
-	+	8	0
-	+	8	1
-	+	8	11
-	+	1	0
-	+	8	0
-	+	1	0
-	+	2	0
-	+	1	33
-	+	2	0
-
-> ~/.xdg/config/eww/eww.scss
-	*	1709760288	0
-	"	21	1
-	.	22	0
-	+	2	0
-	+	22	1
-	+	2	0
-	+	1	0
-	+	22	0
-
-> ~/.xdg/config/eww/src/yuck/bar/_definitions.yuck
-	*	1709759688	0
-	"	1	0
-	^	20	2
-	.	21	0
-	+	21	0
-
-> ~/.xdg/config/eww/src/yuck/bar/_widgets.yuck
-	*	1709759651	0
-	"	1	0
-	.	203	0
-	+	203	0
-
-> ~/.xdg/config/nvim/init.vim
-	*	1709752955	0
-	"	1	0
-
-> ~/.xdg/config/eww/NERD_tree_tab_1
-	*	1709752439	0
-	"	5	2
-	.	1	0
-	+	1	0
-
-> ~/.vimrc
-	*	1709751838	0
-	"	1	0
-	^	125	0
-	.	125	4
-	+	117	0
-	+	119	0
-	+	126	1
-	+	119	0
-	+	118	0
-	+	119	0
-	+	120	0
-	+	114	0
-	+	115	30
-	+	116	0
-	+	126	0
-	+	120	24
-	+	126	1
-	+	126	0
-	+	127	0
-	+	128	0
-	+	129	21
-	+	128	17
-	+	131	0
-	+	132	0
-	+	129	17
-	+	121	25
-	+	1	0
-	+	121	0
-	+	122	0
-	+	123	0
-	+	124	6
-	+	125	4
-
-> ~/.xdg/config/dotfiles/.vim/mappings.vim
-	*	1709751834	0
-	"	18	10
-	^	14	1
-	.	23	0
-	+	44	0
-	+	40	22
-	+	41	17
-	+	42	18
-	+	40	26
-	+	41	21
-	+	42	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	22	0
-	+	23	0
-
-> ~/eww-dotfiles/config/eww/src/yuck/widgets/_widgets.yuck
-	*	1709750067	0
-	"	1	0
-
-> ~/eww-dotfiles/config/eww/eww.yuck
-	*	1709750045	0
-	"	4	0
-
-> ~/.xdg/config/waybar/style.css
-	*	1709742336	0
-	"	12	0
-	.	12	0
-	+	3	0
-	+	51	16
-	+	26	17
-	+	27	18
-	+	28	19
-	+	24	5
-	+	25	16
-	+	24	15
-	+	25	16
-	+	26	17
-	+	27	18
-	+	28	0
-	+	12	0
-	+	6	13
-	+	10	32
-	+	11	7
-	+	11	23
-	+	11	0
-	+	11	19
-	+	12	0
-	+	11	0
-	+	12	0
-
-> ~/NERD_tree_tab_1
-	*	1709741577	0
-	"	12	6
-	.	1	0
-	+	1	0
-
-> ~/project/a.out
-	*	1709741576	0
-	"	1	0
-
-> ~/.packaging/others/vim/src/dict.c
-	*	1709741181	0
-	"	1	0
-
-> ~/.xdg/config/dotfiles/.vim/plugged/ayu-vim/colors/ayu.vim
-	*	1709741047	0
-	"	277	0
-	^	275	1
-	.	275	1
-	+	275	1
-
-> ~/.xdg/config/dotfiles/.vim/.vimrc
-	*	1709740240	0
-	"	139	0
-	^	139	0
-	.	139	0
-	+	2	0
-	+	139	0
-
-> ~/.xdg/config/dotfiles/.vimrc
-	*	1709739345	0
-	"	115	36
-	^	115	0
-	.	115	0
-	+	6	0
-	+	4	33
-	+	86	17
-	+	5	128
-	+	6	0
-	+	10	0
-	+	11	0
-	+	80	0
-	+	77	1
-	+	109	0
-	+	103	0
-	+	115	0
-
-> /usr/local/share/vim/vim91/colors/ayu_dark.vim
-	*	1709739265	0
-	"	24	0
-
-> ~/.xdg/config/ranger/rc.conf
-	*	1709733918	0
-	"	128	16
-	^	121	17
-	.	121	16
-	+	74	22
-	+	117	31
-	+	121	16
-	+	60	17
-	+	117	30
-	+	121	16
-
-> ~/.xdg/config/hypr/hyprpaper.conf
-	*	1709701694	0
-	"	8	59
-	^	2	52
-	.	8	18
-	+	2	51
-	+	4	0
-	+	10	0
-	+	8	16
-	+	2	51
-	+	8	18
-
-> ~/.xdg/config/dotfiles/bash/.bash_aliases
-	*	1709690581	0
-	"	4	59
-	^	4	60
-	.	4	59
-	+	1	43
-	+	2	10
-	+	3	10
-	+	4	11
-	+	1	13
-	+	3	10
-	+	4	11
-	+	2	15
-	+	4	17
-	+	2	0
-	+	1	22
-	+	2	25
-	+	3	25
-	+	4	27
-	+	1	15
-	+	2	17
-	+	3	17
-	+	4	19
-	+	1	55
-	+	2	57
-	+	3	57
-	+	4	59
-
-> ~/.xdg/config/waybar/style
-	*	1709686279	0
-	"	1	0
-
-> ~/.xdg/config/waybar/config
-	*	1709686258	0
-	"	70	46
-	^	70	47
-	.	70	46
-	+	29	35
-	+	28	46
-	+	14	76
-	+	27	38
-	+	27	35
-	+	20	48
-	+	14	77
-	+	20	34
-	+	14	57
-	+	27	0
-	+	33	0
-	+	34	0
-	+	33	0
-	+	23	42
-	+	25	37
-	+	16	42
-	+	18	42
-	+	19	41
-	+	20	37
-	+	23	40
-	+	25	45
-	+	27	38
-	+	28	40
-	+	29	42
-	+	28	35
-	+	3	23
-	+	46	0
-	+	45	0
-	+	58	33
-	+	63	34
-	+	39	38
-	+	40	42
-	+	41	41
-	+	102	36
-	+	3	24
-	+	21	35
-	+	23	0
-	+	21	40
-	+	22	16
-	+	22	27
-	+	83	1
-	+	86	0
-	+	80	57
-	+	83	0
-	+	82	0
-	+	83	34
-	+	78	24
-	+	110	0
-	+	107	0
-	+	8	49
-	+	10	27
-	+	110	40
-	+	111	43
-	+	110	41
-	+	111	54
-	+	114	34
-	+	113	33
-	+	112	43
-	+	113	32
-	+	112	42
-	+	111	41
-	+	110	28
-	+	113	29
-	+	114	30
-	+	112	39
-	+	110	22
-	+	112	38
-	+	113	28
-	+	114	29
-	+	109	30
-	+	110	40
-	+	111	52
-	+	112	43
-	+	113	33
-	+	108	28
-	+	109	28
-	+	86	1
-	+	31	0
-	+	24	37
-	+	25	8
-	+	27	0
-	+	25	0
-	+	26	34
-	+	24	37
-	+	26	31
-	+	24	29
-	+	23	23
-	+	22	23
-	+	21	23
-	+	20	23
-	+	19	23
-	+	18	23
-	+	30	38
-	+	26	46
-	+	30	39
-	+	29	43
-	+	79	37
-	+	70	45
-	+	79	51
-	+	70	46

@@ -51,4 +51,7 @@ bindkey '\e' autosuggest-clear
 PS1=$'
 %{\e[0;34m%}%B\u2320%b%{\e[0m%} %{\e[0;34m%}%B[%b%{\e[0m%}%B%T%b%{\e[0;34m%}%B]%b%{\e[0m%} %{\e[0;34m%}%B[%b%{\e[0m%}%B%w%b%{\e[0;34m%}%B]%b%{\e[0m%} %{\e[0;34m%}%B[%b%{\e[0m%}%B%~%b%{\e[0;34m%}%B]%b%{\e[0m%} %{\e[0;34m%}%Bdx%b%{\e[0m%}
 %{\e[0;34m%}%B\u2321%b%{\e[0m%} %B->%b '
-cd /home/home
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
